@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588442974891
+    "lastModifiedOn": 1588443119834
   },
   "creationTag": {
     "versionNumber": 0,
@@ -103,32 +103,8 @@
         "type": "string"
       },
       {
-        "name": "Status",
-        "type": "string"
-      },
-      {
-        "name": "Debt_To_Income_Ratio",
-        "type": "string"
-      },
-      {
         "name": "Home_Ownership",
         "type": "string"
-      },
-      {
-        "name": "FICO_Range",
-        "type": "string"
-      },
-      {
-        "name": "Open_CREDIT_Lines",
-        "type": "double"
-      },
-      {
-        "name": "Revolving_CREDIT_Balance",
-        "type": "double"
-      },
-      {
-        "name": "Inquiries_in_the_Last_6_Months",
-        "type": "double"
       }
     ],
     "userModified": true
