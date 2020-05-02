@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588444295492
+    "lastModifiedOn": 1588445795837
   },
   "creationTag": {
     "versionNumber": 0,
@@ -97,6 +97,14 @@
       {
         "name": "Date_Of_Birth",
         "type": "string"
+      },
+      {
+        "name": "Date_Of_Birth_parsed",
+        "type": "date"
+      },
+      {
+        "name": "Age",
+        "type": "bigint"
       },
       {
         "name": "Monthly_Income",
