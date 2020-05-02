@@ -3,37 +3,40 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": 1,
   "seed": 1337,
   "randomColumns": [],
   "centileOrders": [],
   "rangeSetTime": false,
+  "column": "Status",
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "VALUES",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": "Accepted"
     }
   ],
   "rangeSplits": [
@@ -89,6 +92,68 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "id",
+                "type": "bigint"
+              },
+              {
+                "name": "Amount_Requested",
+                "type": "bigint"
+              },
+              {
+                "name": "Loan_Purpose",
+                "type": "string"
+              },
+              {
+                "name": "Loan_Length",
+                "type": "string"
+              },
+              {
+                "name": "Home_Ownership",
+                "type": "string"
+              },
+              {
+                "name": "Status",
+                "type": "string"
+              },
+              {
+                "name": "Date_Of_Birth",
+                "type": "string"
+              },
+              {
+                "name": "Date_Of_Birth_parsed",
+                "type": "date"
+              },
+              {
+                "name": "Age",
+                "type": "bigint"
+              },
+              {
+                "name": "Monthly_Income",
+                "type": "double"
+              },
+              {
+                "name": "State",
+                "type": "string"
+              },
+              {
+                "name": "Interest_Rate",
+                "type": "double"
+              },
+              {
+                "name": "FicoAvg",
+                "type": "double"
+              },
+              {
+                "name": "Default",
+                "type": "double"
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
