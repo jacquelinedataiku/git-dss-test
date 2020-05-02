@@ -52,6 +52,33 @@
         "matching": "FULL_STRING"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "ORTGAGE",
+            "to": "MORTGAGE"
+          },
+          {
+            "from": "MORTGAG",
+            "to": "MORTGAGE"
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "Home_Ownership"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "FULL_STRING"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
