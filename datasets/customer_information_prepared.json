@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588445795837
+    "lastModifiedOn": 1588446245955
   },
   "creationTag": {
     "versionNumber": 0,
@@ -111,10 +111,6 @@
         "type": "double"
       },
       {
-        "name": "Employment_Length",
-        "type": "string"
-      },
-      {
         "name": "State",
         "type": "string"
       },
@@ -123,8 +119,8 @@
         "type": "double"
       },
       {
-        "name": "FICO_Range",
-        "type": "string"
+        "name": "FicoAvg",
+        "type": "double"
       },
       {
         "name": "Default",
