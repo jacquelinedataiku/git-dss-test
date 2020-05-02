@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588445817651
+    "lastModifiedOn": 1588446085981
   },
   "creationTag": {
     "versionNumber": 0,
@@ -101,10 +101,6 @@
       {
         "name": "Monthly_Income",
         "type": "double"
-      },
-      {
-        "name": "Employment_Length",
-        "type": "string"
       },
       {
         "name": "State",
