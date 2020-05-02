@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588446454636
+    "lastModifiedOn": 1588446524296
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,7 +85,64 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "id",
+        "type": "bigint"
+      },
+      {
+        "name": "Amount_Requested",
+        "type": "bigint"
+      },
+      {
+        "name": "Loan_Purpose",
+        "type": "string"
+      },
+      {
+        "name": "Loan_Length",
+        "type": "string"
+      },
+      {
+        "name": "Home_Ownership",
+        "type": "string"
+      },
+      {
+        "name": "Status",
+        "type": "string"
+      },
+      {
+        "name": "Date_Of_Birth",
+        "type": "string"
+      },
+      {
+        "name": "Date_Of_Birth_parsed",
+        "type": "date"
+      },
+      {
+        "name": "Age",
+        "type": "bigint"
+      },
+      {
+        "name": "Monthly_Income",
+        "type": "double"
+      },
+      {
+        "name": "State",
+        "type": "string"
+      },
+      {
+        "name": "Interest_Rate",
+        "type": "double"
+      },
+      {
+        "name": "FicoAvg",
+        "type": "double"
+      },
+      {
+        "name": "Default",
+        "type": "double"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
