@@ -52,7 +52,7 @@
     "main": {
       "items": [
         {
-          "ref": "customer_information",
+          "ref": "customer_information_final",
           "deps": []
         }
       ]
@@ -69,11 +69,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588445795909
+    "lastModifiedOn": 1588446099851
   },
   "creationTag": {
     "versionNumber": 0,
