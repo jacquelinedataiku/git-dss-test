@@ -48,49 +48,73 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "scatter",
+        "type": "multi_columns_lines",
         "variant": "normal",
-        "name": "Date_Of_Birth_parsed vs Monthly_Income",
+        "name": "Avg. of Monthly_Income by Date_Of_Birth_parsed",
         "userEditedName": false,
-        "genericDimension0": [],
-        "genericDimension1": [],
-        "facetDimension": [],
-        "animationDimension": [],
-        "genericMeasures": [],
-        "xDimension": [],
-        "yDimension": [],
-        "uaXDimension": [
+        "genericDimension0": [
           {
             "column": "Date_Of_Birth_parsed",
             "type": "DATE",
-            "treatAsAlphanum": false,
-            "dateMode": "RANGE",
-            "sortBy": "NATURAL",
-            "sortAscending": false,
-            "isA": "ua"
+            "numParams": {
+              "emptyBinsMode": "AVERAGE"
+            },
+            "dateParams": {
+              "mode": "AUTOMATIC"
+            },
+            "maxValues": 0,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Monthly_Income, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Monthly_Income, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
           }
         ],
-        "uaYDimension": [
+        "genericDimension1": [],
+        "facetDimension": [],
+        "animationDimension": [],
+        "genericMeasures": [
           {
             "column": "Monthly_Income",
+            "function": "AVG",
             "type": "NUMERICAL",
-            "treatAsAlphanum": false,
-            "sortBy": "NATURAL",
-            "sortAscending": false,
-            "isA": "ua"
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
           }
         ],
+        "xDimension": [],
+        "yDimension": [],
+        "uaXDimension": [],
+        "uaYDimension": [],
         "uaSize": [],
         "uaShape": [],
-        "uaColor": [
-          {
-            "column": "Default",
-            "type": "NUMERICAL",
-            "treatAsAlphanum": true,
-            "isA": "ua",
-            "adminLevel": 0
-          }
-        ],
+        "uaColor": [],
         "uaTooltip": [],
         "groupDimension": [],
         "xMeasure": [],
@@ -185,7 +209,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,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",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABHUlEQVRoQ+1YOw7CMAx1L4DEDeAGHAEGBo7LzABHYGeACyAGhFhRhQpRlcRO3ESYPkYaW3l+n6ZpaGS/Rot3eTnu2x6H2WKl7VWjHoBTp+xj2P3v1xRQhOHSgDVDHAywTxmtrzkFdHXdOrePmwspz2N5Ug0wN5Dc57GB0fm2pvl054aqecA+5j/DA2AiMCx5LflSONeDMUm6oZfTfzAPA3BAFlqGtPVgmDJDC5KGpN8T0HpQWw8Pw8OSUwcRIbQQWn8QWqEP8JJn4eopvbmeJs/7YxuytnZDpeuTX0sA3KO6NEPa/mCYO3hA0pD099455wpG61GuHh6Gh3u6HF1oCT+eTC1TX8SbQst52BoYyX7BsGRKlteAYcvsSfb+As8RI1YwfJxpAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
