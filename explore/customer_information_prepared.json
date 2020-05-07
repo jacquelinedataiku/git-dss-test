@@ -48,7 +48,7 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "multi_columns_lines",
+        "type": "grouped_columns",
         "variant": "normal",
         "name": "Avg. of Monthly_Income by Date_Of_Birth_parsed",
         "userEditedName": false,
@@ -86,8 +86,9 @@
               }
             ],
             "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Average of Monthly_Income, ascending",
               "sortAscending": true
             }
           }
@@ -167,6 +168,7 @@
           "defaultRadius": 5.0,
           "singleShape": "FILLED_CIRCLE"
         },
+        "computeMode": "NORMAL",
         "xAxisMode": "NORMAL",
         "yAxisMode": "NORMAL",
         "pieOptions": {
@@ -184,7 +186,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABYklEQVRoQ+2ZzQ2CQBCFZ9UYu+BiCTZgPOrROrxag1fr8KhHYwOW4MUujFExEFbXzf4MIGGBxw32J/P53swOKKhjl8jLG633p2TNdbOY5l1rm5/s+c/9XHEB2KearnCqzmg+i26HY1GVGqUwB9iXBhxg3x4+oeR4aUubgE0uUAOSTkjnif6W4ufq55mhRtQO/AOQWZqIzkQ0kWM6hPF5Bvzo3ZeD13Cnz5H3Etg2XrnCHGBWEBZg1toCp0VhS4cCLI9ItQ647N8qYIrjCwkxdtkewK5uyDYmz2G9aLHysGQOq5b+q8J6lQwxh3Vgk7XZlgawInGolobCRARLt6lKw9KwtKNTwLGEY+lwDK21LFS0XFb+bGj5AFB3L91ZYBXc23i0QWEWMAe0KZYGsKm4QGFHyQ399RCWhqWJCDmMHP7+AiharCY6m1Thd2k9jOTPPW9rmSf2JswFcBNUKhNj5xR+A9VEDFY2gNVXAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABB0lEQVRoQ+2aTw4BMRTGvyLiEJJuHMEFxJKlc1hyBltbV7DDUlzAEWwkDiGCkQ5iIqOZTiLpe/PNuov59fvz2qQGFfuMZl47Xe+yfMfZsEdgyYrbyWoBYzq/GFQo7GzrQFL7JslBPPB3DvPUEwfsoK61y6hxby7LRCoa4CLqwNTnSG5jccAvuBOAdpBK0oDT0mgN+va82QLYA+gS2LcDUhTO5lO1wnlFROCQEMduaSoMgJampT07wAyH2OO59q9naZYWS0vZWboylvbdbVXN4SKXeAKHTJZY5nARZd9cKhQmsMemVJgZFnB5YIaZ4c8OsLRYWgJKK0QkSWtVP3nIE4LAkuxZ5l8f+izDRya9w0gAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
