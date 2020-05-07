@@ -28,7 +28,7 @@
     "def": {
       "type": "multi_columns_lines",
       "variant": "normal",
-      "name": "Count by Date_Of_Birth_parsed",
+      "name": "Avg. of Monthly_Income by Date_Of_Birth_parsed",
       "userEditedName": false,
       "genericDimension0": [
         {
@@ -54,30 +54,18 @@
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Count of records, descending"
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 0,
-              "label": "Count of records, ascending",
-              "sortAscending": true
-            },
-            {
-              "type": "AGGREGATION",
-              "measureIdx": 1,
               "label": "Average of Date_Of_Birth_parsed_year, descending"
             },
             {
               "type": "AGGREGATION",
-              "measureIdx": 1,
+              "measureIdx": 0,
               "label": "Average of Date_Of_Birth_parsed_year, ascending",
               "sortAscending": true
             }
           ],
           "sort": {
-            "type": "AGGREGATION",
-            "measureIdx": 1,
-            "label": "Average of Date_Of_Birth_parsed_year, ascending",
+            "type": "NATURAL",
+            "label": "Natural ordering",
             "sortAscending": true
           }
         }
@@ -85,18 +73,7 @@
       "genericDimension1": [],
       "facetDimension": [],
       "animationDimension": [],
-      "genericMeasures": [
-        {
-          "function": "COUNT",
-          "type": "NUMERICAL",
-          "displayed": true,
-          "isA": "measure",
-          "displayAxis": "axis1",
-          "displayType": "column",
-          "computeMode": "NORMAL",
-          "computeModeDim": 0
-        }
-      ],
+      "genericMeasures": [],
       "xDimension": [],
       "yDimension": [],
       "uaXDimension": [],
@@ -198,14 +175,14 @@
   },
   "owner": "admin",
   "listed": false,
-  "name": "Count by Date_Of_Birth_parsed on customer_information_final_prepared",
+  "name": "Avg. of Monthly_Income by Date_Of_Birth_parsed on customer_information_final_prepared",
   "dashboardCreationId": "4MhyoGr",
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588883758115
+    "lastModifiedOn": 1588883798953
   },
   "creationTag": {
     "versionNumber": 0,
