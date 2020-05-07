@@ -49,42 +49,36 @@
             {
               "type": "NATURAL",
               "label": "Natural ordering",
-              "sortAscending": true,
-              "$$hashKey": "object:8070"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Count of records, descending",
-              "$$hashKey": "object:8071"
+              "label": "Count of records, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
               "label": "Count of records, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:8072"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 1,
-              "label": "Average of Date_Of_Birth_parsed_year, descending",
-              "$$hashKey": "object:8073"
+              "label": "Average of Date_Of_Birth_parsed_year, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 1,
               "label": "Average of Date_Of_Birth_parsed_year, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:8069"
+              "sortAscending": true
             }
           ],
           "sort": {
             "type": "AGGREGATION",
             "measureIdx": 1,
             "label": "Average of Date_Of_Birth_parsed_year, ascending",
-            "sortAscending": true,
-            "$$hashKey": "object:8069"
+            "sortAscending": true
           }
         }
       ],
@@ -155,7 +149,7 @@
       "colorOptions": {
         "singleColor": "#2678B1",
         "transparency": 0.75,
-        "colorPalette": "default",
+        "colorPalette": "__dku_custom__",
         "ccScaleMode": "NORMAL",
         "customPalette": {
           "id": "__dku_custom__",
@@ -173,6 +167,7 @@
         "defaultRadius": 5.0,
         "singleShape": "FILLED_CIRCLE"
       },
+      "computeMode": "NORMAL",
       "xAxisMode": "NORMAL",
       "yAxisMode": "NORMAL",
       "pieOptions": {
@@ -190,7 +185,6 @@
         "gridLonDeg": 0.5,
         "gridLatDeg": 0.5
       },
-      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABdUlEQVRoQ+2YMQ6CMBSGW1xIjIMXkNHBU2jipJdxURcH46IuLu4m3kCjk4leRU/gZOKgYIrWKAEeWCqlPCZCgfZ7//9eH1CSs4OmwWv1NoeTWWySYf3G52fX2Plp0q7LXFOqwNb1suOACCxJ5tQVDuKSZW1lgXkgkgZHYEmp8/VaXqVZ0YLmQ4WhCAHjaGnBAIY+zvdat8Ewi01tLV3prWsMkhJj/q6+OgN/KovAQA5lqkr7KRtXYff+uzEiBXuQBLzUKp0b4DBQEYWpTTuO4cxElJaisGxgkT4bgZNoPP6l8C9KZ1phL3CUvyYInEVLe9ccVsV/VjjIPtXuqnSlhTUUuKgfD5+NB9+WwHeH/PlMHDhKwYrztYTAhjNLVeHX5GdCSJnljgoKU4cuj9PWwi8wsS0dAKQUsJsyAXmMwFB+oMLPCKln6XGrYfW3e6+19bU0Aj+tiAprU7RELQ00FPoWLcgBqo/HzmHVgaD1ITAUoayPPwANchRHfP8KBgAAAABJRU5ErkJggg\u003d\u003d",
       "disableSafetyLimits": false,
       "useLiveProcessingIfAvailable": true,
       "legendPlacement": "OUTER_RIGHT"
@@ -202,11 +196,11 @@
   "name": "Count by Date_Of_Birth_parsed on customer_information_final_prepared",
   "dashboardCreationId": "4MhyoGr",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588882889187
+    "lastModifiedOn": 1588883606073
   },
   "creationTag": {
     "versionNumber": 0,
