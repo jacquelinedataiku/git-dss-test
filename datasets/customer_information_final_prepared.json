@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588881790010
+    "lastModifiedOn": 1588881827193
   },
   "creationTag": {
     "versionNumber": 0,
@@ -97,6 +97,22 @@
       {
         "name": "Date_Of_Birth",
         "type": "string"
+      },
+      {
+        "name": "Date_Of_Birth_parsed",
+        "type": "date"
+      },
+      {
+        "name": "Date_Of_Birth_parsed_year",
+        "type": "bigint"
+      },
+      {
+        "name": "Date_Of_Birth_parsed_month",
+        "type": "bigint"
+      },
+      {
+        "name": "Date_Of_Birth_parsed_day",
+        "type": "bigint"
       },
       {
         "name": "Monthly_Income",
