@@ -83,11 +83,23 @@
                 "measureIdx": 0,
                 "label": "Average of Monthly_Income, ascending",
                 "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of FicoAvg, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of FicoAvg, ascending",
+                "sortAscending": true
               }
             ],
             "sort": {
-              "type": "NATURAL",
-              "label": "Natural ordering",
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of FicoAvg, ascending",
               "sortAscending": true
             }
           }
@@ -122,7 +134,18 @@
         "colorMeasure": [],
         "sizeMeasure": [],
         "geometry": [],
-        "tooltipMeasures": [],
+        "tooltipMeasures": [
+          {
+            "column": "FicoAvg",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeModeDim": 0
+          }
+        ],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
         "filters": [
@@ -209,7 +232,7 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABHUlEQVRoQ+1YOw7CMAx1L4DEDeAGHAEGBo7LzABHYGeACyAGhFhRhQpRlcRO3ESYPkYaW3l+n6ZpaGS/Rot3eTnu2x6H2WKl7VWjHoBTp+xj2P3v1xRQhOHSgDVDHAywTxmtrzkFdHXdOrePmwspz2N5Ug0wN5Dc57GB0fm2pvl054aqecA+5j/DA2AiMCx5LflSONeDMUm6oZfTfzAPA3BAFlqGtPVgmDJDC5KGpN8T0HpQWw8Pw8OSUwcRIbQQWn8QWqEP8JJn4eopvbmeJs/7YxuytnZDpeuTX0sA3KO6NEPa/mCYO3hA0pD099455wpG61GuHh6Gh3u6HF1oCT+eTC1TX8SbQst52BoYyX7BsGRKlteAYcvsSfb+As8RI1YwfJxpAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABJElEQVRoQ+1Zuw3CMBC9LIDEBrABI+CCgnGpKcgI9BSwAKJAiIYCRchwivw5J8bkyEsVxY7t9+7d88WpaGRXlQvv8rTf2bHq2cLkGjf3OADcldGSEbZzNUri95K1944wB1pK0kUA+4C5nnPgUkJSFPI1wOvzYXK/3jY+qXBJufpI2u17MUK5EboA8/lDphmUdAnAUoUAMBH5FIQIM73/paTf+I6XVW3Mg+c3AHM2tJoWIowc9lQWkHSLGEklJS0sYpVaSuGBHEYOI4dfDMC0YFqfI5aYy/6inTTX0l0IawDTfLpt3rXbmpqPBwAOHADwwgMRDp3lDmlbgqQhaYcG4NJE2JaGeqZVxLRCDq61rfffQ23AAVhbxFLXiwinMqat/+gi/AQxppZWnkRHQAAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
