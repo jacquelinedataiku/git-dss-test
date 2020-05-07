@@ -77,7 +77,7 @@
         "_refreshTrigger": 0
       },
       "def": {
-        "type": "grouped_columns",
+        "type": "multi_columns_lines",
         "variant": "normal",
         "name": "Avg. of Monthly_Income by Date_Of_Birth_parsed",
         "userEditedName": false,
@@ -223,7 +223,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABYklEQVRoQ+2ZzQ2CQBCFZ9UYu+BiCTZgPOrROrxag1fr8KhHYwOW4MUujFExEFbXzf4MIGGBxw32J/P53swOKKhjl8jLG633p2TNdbOY5l1rm5/s+c/9XHEB2KearnCqzmg+i26HY1GVGqUwB9iXBhxg3x4+oeR4aUubgE0uUAOSTkjnif6W4ufq55mhRtQO/AOQWZqIzkQ0kWM6hPF5Bvzo3ZeD13Cnz5H3Etg2XrnCHGBWEBZg1toCp0VhS4cCLI9ItQ647N8qYIrjCwkxdtkewK5uyDYmz2G9aLHysGQOq5b+q8J6lQwxh3Vgk7XZlgawInGolobCRARLt6lKw9KwtKNTwLGEY+lwDK21LFS0XFb+bGj5AFB3L91ZYBXc23i0QWEWMAe0KZYGsKm4QGFHyQ399RCWhqWJCDmMHP7+AiharCY6m1Thd2k9jOTPPW9rmSf2JswFcBNUKhNj5xR+A9VEDFY2gNVXAAAAAElFTkSuQmCC",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABlElEQVRoQ+2YPUpDQRDHZ6wkip2tNvaeQbB7z2tY2xmwSKX4xBN4CzGxUcgZPELeHZRAIBsWXBiWffNmXxKSSSZdwuxmf/Ofr12EPftgF97z++HYAf7UVXHXZX28xu8HAKNJVb6uYj9uDwOWeJgqfDH4PJlN5+9h3aQqryR7UBtVCp8Oxse96e9HG7CHanKGBPjfBro4lDp36ZBuAo4PGL77Pw+Hpr+FHD7rD6/RwUMMthXACO7y7/Dohioch3MKrgkYAAqH8MgBU4flpo63X0phCXA4YKRm6qwjCszBeIdxKbK2Kr1pYC6anMOn+qX4im1UK8wp6VOjfi6/DTgn8Wke+klr20KasqxEYW3AqWqflcMGLOjD62xLbUXLFM4dPCykLaTTWRVGwZYWmD1aWg4TDzRdQqwtcWFiRWtXi1bqLqthlu48eGgGxjm+uQN3G15ZREVrb4C5ZxktIZ2lsAHTxq7gAcAXLVNYOmjEdpbDjOc2eXmwkLaQJh6wtrTrbSnnkV6LrWiW1gIjOacBS7yk2WYBgC6eVtrIeI0AAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
