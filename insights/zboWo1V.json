@@ -194,9 +194,52 @@
             "#7b4173",
             "#a55194",
             "#ce6dbd",
-            "#de9ed6"
+            "#de9ed6",
+            "#8FBC8F",
+            "#000000"
           ],
-          "values": [],
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
           "fixedValues": false
         },
         "paletteType": "CONTINUOUS",
@@ -237,11 +280,11 @@
   "name": "Count by Date_Of_Birth_parsed on customer_information_final_prepared",
   "dashboardCreationId": "4MhyoGr",
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588883606102
+    "lastModifiedOn": 1588883661177
   },
   "creationTag": {
     "versionNumber": 0,
