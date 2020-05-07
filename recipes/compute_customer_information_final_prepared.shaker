@@ -2,7 +2,6 @@
   "columnsSelection": {
     "mode": "ALL"
   },
-  "analysisColumnData": {},
   "explorationSampling": {
     "_refreshTrigger": 0,
     "selection": {
@@ -26,19 +25,57 @@
     "autoRefreshSample": false
   },
   "explorationFilters": [],
-  "sorting": [],
-  "exploreUIParams": {},
-  "globalSearchQuery": "",
-  "coloring": {
-    "scheme": "MEANING_AND_STATUS",
-    "individualColumns": [],
-    "valueColoringMode": "HASH"
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
   },
-  "steps": [],
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateParser",
+      "params": {
+        "outCol": "Date_Of_Birth_parsed",
+        "formats": [
+          "yyyy-dd-MM"
+        ],
+        "columns": [
+          "Date_Of_Birth"
+        ],
+        "timezone_id": "UTC",
+        "appliesTo": "SINGLE_COLUMN",
+        "lang": "auto"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "Date_Of_Birth_parsed_month",
+        "outYearColumn": "Date_Of_Birth_parsed_year",
+        "column": "Date_Of_Birth_parsed",
+        "timezone_id": "UTC",
+        "outDayColumn": "Date_Of_Birth_parsed_day"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
     "_refreshTrigger": 0,
     "autoRefreshSample": false
+  },
+  "analysisColumnData": {},
+  "sorting": [],
+  "globalSearchQuery": "",
+  "coloring": {
+    "scheme": "MEANING_AND_STATUS",
+    "individualColumns": [],
+    "valueColoringMode": "HASH"
   }
 }
