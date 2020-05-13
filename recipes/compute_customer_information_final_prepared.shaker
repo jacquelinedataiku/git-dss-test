@@ -56,7 +56,7 @@
       "type": "DateComponentsExtractor",
       "params": {
         "outMonthColumn": "Date_Of_Birth_parsed_month",
-        "outYearColumn": "Date_Of_Birth_parsed_year",
+        "outYearColumn": "year",
         "column": "Date_Of_Birth_parsed",
         "outDayOfWeekColumn": "Date_Of_Birth_parsed_dow",
         "timezone_id": "UTC",
