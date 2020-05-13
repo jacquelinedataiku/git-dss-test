@@ -124,7 +124,6 @@
     }
   },
   "name": "loan_default",
-  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -180,11 +179,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589382634970
+    "lastModifiedOn": 1589382901657
   },
   "creationTag": {
     "versionNumber": 0,
@@ -194,7 +193,9 @@
     "lastModifiedOn": 1588275346689
   },
   "shortDesc": "The project *loan_default* was created by Administrator on Apr 30th 2020",
-  "tags": [],
+  "tags": [
+    "duplicated"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": [
