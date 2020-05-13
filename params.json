@@ -123,7 +123,8 @@
       }
     }
   },
-  "name": "loan_default (test_branch)",
+  "name": "loan_default",
+  "projectStatus": "Sandbox",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -179,11 +180,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589382904099
+    "lastModifiedOn": 1589388634376
   },
   "creationTag": {
     "versionNumber": 0,
@@ -192,10 +193,8 @@
     },
     "lastModifiedOn": 1588275346689
   },
-  "shortDesc": "The project *loan_default* was created by Administrator on Apr 30th 2020\nThe project *LOAN_DEFAULT_TEST_BRANCH* was copied from *LOAN_DEFAULT* by Administrator on May 13th 2020",
-  "tags": [
-    "duplicated"
-  ],
+  "shortDesc": "The project *loan_default* was created by Administrator on Apr 30th 2020",
+  "tags": [],
   "customFields": {},
   "checklists": {
     "checklists": [
