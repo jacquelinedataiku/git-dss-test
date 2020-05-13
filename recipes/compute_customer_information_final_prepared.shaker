@@ -58,6 +58,7 @@
         "outMonthColumn": "Date_Of_Birth_parsed_month",
         "outYearColumn": "Date_Of_Birth_parsed_year",
         "column": "Date_Of_Birth_parsed",
+        "outDayOfWeekColumn": "Date_Of_Birth_parsed_dow",
         "timezone_id": "UTC",
         "outDayColumn": "Date_Of_Birth_parsed_day"
       },
@@ -71,6 +72,22 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
+  "columnWidthsByName": {
+    "Status": 100,
+    "Date_Of_Birth_parsed_week": 203,
+    "Monthly_Income": 120,
+    "Date_Of_Birth_parsed_day": 195,
+    "Interest_Rate": 113,
+    "Date_Of_Birth_parsed_month": 210,
+    "FICO_Range": 120,
+    "Date_Of_Birth": 141,
+    "Date_Of_Birth_parsed": 190,
+    "Default": 100,
+    "State": 100,
+    "Date_Of_Birth_parsed_dow": 195,
+    "Date_Of_Birth_parsed_year": 203,
+    "id": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
