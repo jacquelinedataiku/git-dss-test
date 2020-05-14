@@ -3,6 +3,14 @@
     "duplicated": {
       "color": "#3A85AD"
     },
-    "test_tag": {}
+    "test_tag": {
+      "color": "#a088bd"
+    },
+    "jenny": {
+      "color": "#FFD83D"
+    },
+    "glenn": {
+      "color": "#90a8b7"
+    }
   }
 }
