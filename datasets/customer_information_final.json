@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588446085981
+    "lastModifiedOn": 1589487856598
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,9 @@
     },
     "lastModifiedOn": 1588445817651
   },
-  "tags": [],
+  "tags": [
+    "glenn"
+  ],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/customer_information_final",

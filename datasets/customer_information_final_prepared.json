@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 3,
+    "versionNumber": 4,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589475911395
+    "lastModifiedOn": 1589487856603
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,7 +73,8 @@
     "lastModifiedOn": 1588881790010
   },
   "tags": [
-    "test_tag"
+    "test_tag",
+    "glenn"
   ],
   "params": {
     "connection": "filesystem_managed",
