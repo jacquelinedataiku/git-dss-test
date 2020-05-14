@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589490723421
+    "lastModifiedOn": 1589490742922
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,49 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "id",
+        "type": "bigint"
+      },
+      {
+        "name": "Status",
+        "type": "string"
+      },
+      {
+        "name": "Date_Of_Birth",
+        "type": "string"
+      },
+      {
+        "name": "Date_Of_Birth_parsed",
+        "type": "date"
+      },
+      {
+        "name": "Age",
+        "type": "bigint"
+      },
+      {
+        "name": "Monthly_Income",
+        "type": "double"
+      },
+      {
+        "name": "State",
+        "type": "string"
+      },
+      {
+        "name": "Interest_Rate",
+        "type": "double"
+      },
+      {
+        "name": "FicoAvg",
+        "type": "double"
+      },
+      {
+        "name": "Default",
+        "type": "double"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
