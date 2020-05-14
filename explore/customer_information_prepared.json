@@ -5,7 +5,18 @@
     "columnsSelection": {
       "mode": "ALL"
     },
-    "columnWidthsByName": {},
+    "columnWidthsByName": {
+      "id": 100,
+      "Status": 100,
+      "Date_Of_Birth": 141,
+      "Date_Of_Birth_parsed": 190,
+      "Age": 100,
+      "Monthly_Income": 120,
+      "State": 100,
+      "Interest_Rate": 113,
+      "FicoAvg": 100,
+      "Default": 100
+    },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
