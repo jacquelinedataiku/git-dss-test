@@ -5,6 +5,7 @@
     "columnsSelection": {
       "mode": "ALL"
     },
+    "columnWidthsByName": {},
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
       "individualColumns": [],
@@ -223,7 +224,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABlElEQVRoQ+2YPUpDQRDHZ6wkip2tNvaeQbB7z2tY2xmwSKX4xBN4CzGxUcgZPELeHZRAIBsWXBiWffNmXxKSSSZdwuxmf/Ofr12EPftgF97z++HYAf7UVXHXZX28xu8HAKNJVb6uYj9uDwOWeJgqfDH4PJlN5+9h3aQqryR7UBtVCp8Oxse96e9HG7CHanKGBPjfBro4lDp36ZBuAo4PGL77Pw+Hpr+FHD7rD6/RwUMMthXACO7y7/Dohioch3MKrgkYAAqH8MgBU4flpo63X0phCXA4YKRm6qwjCszBeIdxKbK2Kr1pYC6anMOn+qX4im1UK8wp6VOjfi6/DTgn8Wke+klr20KasqxEYW3AqWqflcMGLOjD62xLbUXLFM4dPCykLaTTWRVGwZYWmD1aWg4TDzRdQqwtcWFiRWtXi1bqLqthlu48eGgGxjm+uQN3G15ZREVrb4C5ZxktIZ2lsAHTxq7gAcAXLVNYOmjEdpbDjOc2eXmwkLaQJh6wtrTrbSnnkV6LrWiW1gIjOacBS7yk2WYBgC6eVtrIeI0AAAAASUVORK5CYII\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABSElEQVRoQ+2YPQ7CMAyFHYl7lKMAEhO9CjNsiLEzRwFWOAucAykogkhRlR8nLaJuH1tpHPXzs1/dKJrYT+XyVrvL3cQ8mnqZGxtab/bURK9nU6/72jO0D4BTGW4rbK9tXInyohTmAKfagAOc2iMllL3fuaRDwOZ/q3ZsjX0Qt4fdWHv/78DRjGo6kaJtLrAimpmYGHCX1jGxxQpzgdvqhuKMwi4wt0RzPUM8sH1F+lrIl4xRAberAsA5PTzfnxdaqwOrtxzT+nUPuyXdq8ISgX2Ozu5hAMdqeyAlDYXHblpQGApHjAguDZd2MoDXUnogLf08jI2WxS5t5mGl9FHaLD1ZYBecNUtLV5gN/DlF2Kyq3fUmuaQBHPJQKCzsxMN3AhI1LSgMhQPdP7DREi4Nl/5mYHKmlf7GkbeCNUvLwwo/MYDHpKaP5Q2KZyZW20cBpQAAAABJRU5ErkJggg\u003d\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
