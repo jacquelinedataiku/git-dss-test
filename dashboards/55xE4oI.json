@@ -3,7 +3,32 @@
     {
       "id": "xJbQY3M",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 6,
+              "height": 3
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showName": true,
+              "showDescription": true,
+              "showCustomFields": true,
+              "showStorageType": false,
+              "showMeaning": false,
+              "showProgressBar": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "J4h968J",
+            "insightType": "dataset_table",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "showTitle": false
     }
@@ -13,11 +38,11 @@
   "name": "dashboard_2",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589474156785
+    "lastModifiedOn": 1589489170152
   },
   "creationTag": {
     "versionNumber": 0,
