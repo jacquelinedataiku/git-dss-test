@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589475911402
+    "lastModifiedOn": 1589487876197
   },
   "creationTag": {
     "versionNumber": 0,
@@ -73,7 +73,8 @@
     "lastModifiedOn": 1588561072319
   },
   "tags": [
-    "test_tag"
+    "test_tag",
+    "jenny"
   ],
   "params": {
     "connection": "filesystem_managed",

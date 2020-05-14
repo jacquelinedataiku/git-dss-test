@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588446352541
+    "lastModifiedOn": 1589487876180
   },
   "creationTag": {
     "versionNumber": 0,
@@ -72,7 +72,9 @@
     },
     "lastModifiedOn": 1588446352531
   },
-  "tags": [],
+  "tags": [
+    "jenny"
+  ],
   "params": {
     "connection": "filesystem_managed",
     "path": "${projectKey}/all_loan_requests_final_prepared_joined",

@@ -32,11 +32,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1588446382834
+    "lastModifiedOn": 1589487876178
   },
   "creationTag": {
     "versionNumber": 0,
@@ -45,7 +45,9 @@
     },
     "lastModifiedOn": 1588446352545
   },
-  "tags": [],
+  "tags": [
+    "jenny"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": []
