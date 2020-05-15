@@ -3,7 +3,81 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "ALL"
+      "mode": "SELECT",
+      "list": [
+        {
+          "name": "id",
+          "d": false
+        },
+        {
+          "name": "Amount_Requested",
+          "d": false
+        },
+        {
+          "name": "Loan_Purpose",
+          "d": false
+        },
+        {
+          "name": "Loan_Length",
+          "d": false
+        },
+        {
+          "name": "Home_Ownership",
+          "d": false
+        },
+        {
+          "name": "Status",
+          "d": false
+        },
+        {
+          "name": "Date_Of_Birth",
+          "d": false
+        },
+        {
+          "name": "Date_Of_Birth_parsed",
+          "d": false
+        },
+        {
+          "name": "Age",
+          "d": false
+        },
+        {
+          "name": "Monthly_Income",
+          "d": false
+        },
+        {
+          "name": "State",
+          "d": true
+        },
+        {
+          "name": "Interest_Rate",
+          "d": false
+        },
+        {
+          "name": "FicoAvg",
+          "d": true
+        },
+        {
+          "name": "Default",
+          "d": false
+        }
+      ]
+    },
+    "columnWidthsByName": {
+      "id": 100,
+      "Amount_Requested": 135,
+      "Loan_Purpose": 141,
+      "Loan_Length": 100,
+      "Home_Ownership": 120,
+      "Status": 100,
+      "Date_Of_Birth": 141,
+      "Date_Of_Birth_parsed": 190,
+      "Age": 100,
+      "Monthly_Income": 120,
+      "State": 100,
+      "Interest_Rate": 113,
+      "FicoAvg": 100,
+      "Default": 100
     },
     "coloring": {
       "scheme": "MEANING_AND_STATUS",
@@ -38,7 +112,9 @@
       "autoRefreshSample": false,
       "_refreshTrigger": 0
     },
-    "exploreUIParams": {},
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
     "globalSearchQuery": "",
     "explorationFilters": [],
     "previewMode": "ALL_ROWS"
