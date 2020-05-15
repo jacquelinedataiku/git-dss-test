@@ -11,7 +11,7 @@
         },
         {
           "name": "Amount_Requested",
-          "d": false
+          "d": true
         },
         {
           "name": "Loan_Purpose",
@@ -31,7 +31,7 @@
         },
         {
           "name": "Date_Of_Birth",
-          "d": false
+          "d": true
         },
         {
           "name": "Date_Of_Birth_parsed",
@@ -39,7 +39,7 @@
         },
         {
           "name": "Age",
-          "d": false
+          "d": true
         },
         {
           "name": "Monthly_Income",
@@ -84,16 +84,7 @@
       "individualColumns": [],
       "valueColoringMode": "HASH"
     },
-    "sorting": [
-      {
-        "column": "State",
-        "ascending": true
-      },
-      {
-        "column": "FicoAvg",
-        "ascending": false
-      }
-    ],
+    "sorting": [],
     "analysisColumnData": {},
     "explorationSampling": {
       "selection": {
