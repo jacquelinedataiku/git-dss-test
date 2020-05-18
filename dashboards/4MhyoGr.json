@@ -9,8 +9,8 @@
             "box": {
               "top": 0,
               "left": 0,
-              "width": 6,
-              "height": 3
+              "width": 2,
+              "height": 2
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -22,27 +22,8 @@
             },
             "autoLoad": true,
             "showTitle": "YES",
-            "insightId": "zboWo1V",
+            "insightId": "Xu3Xmbk",
             "insightType": "chart",
-            "displayMode": "INSIGHT",
-            "resizeImageMode": "FIT_SIZE"
-          },
-          {
-            "tileType": "TEXT",
-            "box": {
-              "top": 1,
-              "left": 8,
-              "width": 4,
-              "height": 3
-            },
-            "clickAction": "DO_NOTHING",
-            "tileParams": {
-              "text": "# Heading\n\n### Heading\n\n**bold text**\n\n*italics*",
-              "textAlign": "LEFT",
-              "isTransparent": false
-            },
-            "autoLoad": true,
-            "showTitle": "NO",
             "displayMode": "INSIGHT",
             "resizeImageMode": "FIT_SIZE"
           }
@@ -56,11 +37,11 @@
   "name": "loan_default\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589814554746
+    "lastModifiedOn": 1589814584447
   },
   "creationTag": {
     "versionNumber": 0,
