@@ -43,6 +43,37 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "FindReplace",
+      "params": {
+        "output": "",
+        "mapping": [
+          {
+            "from": "735-739",
+            "to": "    735-739"
+          },
+          {
+            "from": "715-719",
+            "to": "715-719 "
+          },
+          {
+            "from": "690-694",
+            "to": " 690-694 "
+          }
+        ],
+        "normalization": "EXACT",
+        "columns": [
+          "FICO_Range"
+        ],
+        "appliesTo": "SINGLE_COLUMN",
+        "stopAfterFirstMatch": false,
+        "matching": "SUBSTRING"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -52,6 +83,16 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
+  "columnWidthsByName": {
+    "Status": 100,
+    "Monthly_Income": 120,
+    "State": 100,
+    "Interest_Rate": 113,
+    "id": 100,
+    "FICO_Range": 120,
+    "Date_Of_Birth": 141,
+    "Default": 100
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
