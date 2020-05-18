@@ -5,34 +5,7 @@
   },
   "keys": [
     {
-      "column": "id"
-    },
-    {
-      "column": "Status"
-    },
-    {
-      "column": "Date_Of_Birth"
-    },
-    {
-      "column": "Date_Of_Birth_parsed"
-    },
-    {
       "column": "Age"
-    },
-    {
-      "column": "Monthly_Income"
-    },
-    {
-      "column": "State"
-    },
-    {
-      "column": "Interest_Rate"
-    },
-    {
-      "column": "FicoAvg"
-    },
-    {
-      "column": "Default"
     }
   ],
   "globalCount": false,
@@ -72,6 +45,17 @@
   },
   "outputColumnNameOverrides": {},
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Age",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
