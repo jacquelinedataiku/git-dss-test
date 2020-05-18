@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589822043436
+    "lastModifiedOn": 1589822087558
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,6 +86,10 @@
   },
   "schema": {
     "columns": [
+      {
+        "name": "Status",
+        "type": "string"
+      },
       {
         "name": "Age",
         "type": "bigint"
