@@ -37,11 +37,11 @@
   "name": "loan_default\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1589814584447
+    "lastModifiedOn": 1589814612007
   },
   "creationTag": {
     "versionNumber": 0,
