@@ -89,7 +89,7 @@
         "_refreshTrigger": 0
       },
       "def": {
-        "type": "multi_columns_lines",
+        "type": "stacked_area",
         "variant": "normal",
         "name": "Avg. of Monthly_Income by Date_Of_Birth_parsed",
         "userEditedName": false,
@@ -124,6 +124,17 @@
                 "measureIdx": 0,
                 "label": "Average of Monthly_Income, ascending",
                 "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of Interest_Rate, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of Interest_Rate, ascending",
+                "sortAscending": true
               }
             ],
             "sort": {
@@ -139,6 +150,17 @@
         "genericMeasures": [
           {
             "column": "Monthly_Income",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
+          {
+            "column": "Interest_Rate",
             "function": "AVG",
             "type": "NUMERICAL",
             "displayed": true,
@@ -235,7 +257,7 @@
           "gridLonDeg": 0.5,
           "gridLatDeg": 0.5
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABS0lEQVRoQ+2ZTQ6CMBCFX7mGiSbuPIZb4y28g3oFuIO3IHHpMVyz8BpiiDYpTVuGv0jhsZ6WfvPedFpQWNijuvBuLvkDSLIiPdy7jLfHfOcDivS4H2K+0BwElmTYVHh9zbeqxE2P66JSVApLgSsoXzIkwJIYiVi9Le0DtheogU1wHWO7w5WcSQAD73OpcDItbWdZqyoBNsfabvAlR6KqGdNLYQnw72VPALsKwl64b8HS2LZ7RvTAup25SsWVjFkBo8QLCqtQxyBwaBOo11+STaGGTUsPrnBswC5rt7I0gQV9eOy2FLI0FQZAS89pl6alaemGqwfbEtuS1yKjXQ9H6cPuO+z0z9Kdd+nYgU1w0cFjMcDhzzHxWFqsMIFrmzAVDh1b/tqWaGmfNKxh1nDzr5YpfOJhDbOG2/6SiyhedJaOiKdxqQRuTFHkAR+SJiVWvm9IQwAAAABJRU5ErkJggg\u003d\u003d",
+        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAEbUlEQVRoQ+2Wb2wTZRzHn+fatUs7iDZGjLZ3LYtGFuCFhvmCqJn/2vVuQ4MSiESzREGNsJpsdy1C2rLJuG6JXSBRE82iiS9Eh2y761qBLJr4QoiaABlEhO66aYLRacLadKPcY27zyHlu9K6sxa29V73nvn2e7+f3/T3PHQRldsEy4wUV4OWeeCXhSsKqCtQFj5hGw1tmlmphdLe0/a24beJdz2TZADdHv35s0Pf4N1qAnb4v7xiLPveXFm2pNLoTdjHcriRLHdJi0PU2TyTfIQUt2lJpdAMTDDcisFSDFoN1wXj9aNhzSou2WBoHzbeMR8g+ef6iAruY2EtJ1vtJsWC0zOtkuPAYSwVLAuyk+eBYhAxrMSZpHO2x2vFu7yWtei06nB7qTUWaWksCjDN8X4olW7QYkzQu/+AzyYPNX2nVa9HhDHcsxVLPlgR4XShx7GzIfWOxfAYdDPf6OEu9l0+n57n6zCnqHtZzwEkQBMN1CyzVrgcon7ZowATNrREi1HmlAb3AOMO9n2Kp1/JB6HleNGCc4XalVO9nLcDKT1WC4T8VWPJFPUD5tIsG/GCAf+BCF/mTvGDdvsQHox3unXoTtgfjtonw3KcqzvCDKZZszgfxUCjR+UPIvTef7p9tMgIQ6hciTYel+4L3MM7wrSmW7JUXnS9NeYxoG3QJPc3J+Qxu2H9i+xuP1n7R0uDKLtQR99Ex+y8R78Q6P3fn2YPUn65ALJ7s8nrU89W2cWsv9VDn1EUHCP4sRMhXbxGY67OYjPdc6PA0SkalyZRfYHZ6qN4AISuNrQ/GfWfCnqjcvhs6Tg6c3vfkJqef34YQ2iH/dyFgnOZ315gNP6Zncvul+ZQ65e/79wx/fvFA4wuzyQaGvUJXY0ztreCECYbnAEBWa7X55XR2+mPZtCvA9ya7yFaC5joBBBuVBteHjvfbLFWZ5B9Tdmkcp7kBCMFKNfBssTD4tH2l5fy3e544KpmGEBMQEon5gE0Gw+mLBxppnOHiKZaaTZ5ghg4LbNObtwYcHDES2fRxedH/tChCHwIIX1E+r8pgm65ZxIGaauPmqWyu/8YWWLVi99iVq90QALMSGEEgQAQIWYcB5BMBjMr3NoupczIzs1fuJiWQMm0nw38G4fWPRIQFlN2nK+FVbQlrteEaBwGMIoB8amCz0Tg+ncs5VAW5DABYreWA0aIRATiCAbBFDVx/OfPUqdWWE8pxWVswMN4+sBFihk4DgJPXAbJpMbjYGgxi34tIfFgCc/q5HQiBbco1lMXGMHBOFMHagoGdDL8TAbR1sSH0zQd/BQDdu9C2+vf4nLZgYIefO4ShuYrdrgsBeBUCtGKhbWWtzrjTWUtC8idrCwaWD4jbBatcFyHwHYTgEbWXu2rMv/0+NX23elze27oOrf8TsN6iW01VZ0Y73K1lAyy3dQX4Zq2ylFu6krCWQ6A8Eg6OGEG4IScVZNkD4/TQ89OiafhKjztdFsBa2nypaXS9lpYa3Hx+K8DLIcWbMfwN4K1OR2ZLW/wAAAAASUVORK5CYII\u003d",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
