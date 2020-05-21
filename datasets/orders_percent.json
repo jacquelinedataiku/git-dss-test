@@ -58,11 +58,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1590076796043
+    "lastModifiedOn": 1590076804478
   },
   "creationTag": {
     "versionNumber": 0,
@@ -115,7 +115,7 @@
       {
         "name": "percentage",
         "type": "string",
-        "meaning": "DoubleMeaning"
+        "meaning": "LongMeaning"
       }
     ],
     "userModified": true
