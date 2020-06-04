@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1591285559490
+    "lastModifiedOn": 1591286774221
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,9 +59,19 @@
   "schema": {
     "columns": [
       {
-        "name": "max_income",
+        "name": "?column?",
         "type": "string",
         "originalType": "text"
+      },
+      {
+        "name": "?column?_1",
+        "type": "string",
+        "originalType": "text"
+      },
+      {
+        "name": "total",
+        "type": "int",
+        "originalType": "int4"
       }
     ],
     "userModified": true
