@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1591284970341
+    "lastModifiedOn": 1591285559490
   },
   "creationTag": {
     "versionNumber": 0,
@@ -57,7 +57,13 @@
     "readSQLDateColsAsDSSDates": true
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {
+        "name": "max_income",
+        "type": "string",
+        "originalType": "text"
+      }
+    ],
     "userModified": true
   },
   "metrics": {
