@@ -28,11 +28,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1591286774221
+    "lastModifiedOn": 1591287092806
   },
   "creationTag": {
     "versionNumber": 0,
@@ -59,12 +59,12 @@
   "schema": {
     "columns": [
       {
-        "name": "?column?",
+        "name": "id",
         "type": "string",
         "originalType": "text"
       },
       {
-        "name": "?column?_1",
+        "name": "Status",
         "type": "string",
         "originalType": "text"
       },
