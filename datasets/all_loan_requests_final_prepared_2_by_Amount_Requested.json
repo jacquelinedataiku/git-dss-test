@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1591808873465
+    "lastModifiedOn": 1591808904744
   },
   "creationTag": {
     "versionNumber": 0,
@@ -91,7 +91,11 @@
         "type": "bigint"
       },
       {
-        "name": "count",
+        "name": "id_sum",
+        "type": "bigint"
+      },
+      {
+        "name": "Loan_Length_sum",
         "type": "bigint"
       }
     ],
