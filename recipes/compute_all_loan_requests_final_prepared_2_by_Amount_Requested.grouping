@@ -5,7 +5,20 @@
   },
   "keys": [
     {
-      "column": "Amount_Requested"
+      "last": false,
+      "max": false,
+      "column": "Amount_Requested",
+      "count": false,
+      "$idx": 1,
+      "sum": false,
+      "concat": false,
+      "type": "bigint",
+      "countDistinct": false,
+      "min": false,
+      "avg": false,
+      "$selected": false,
+      "stddev": false,
+      "first": false
     }
   ],
   "values": [
@@ -15,13 +28,16 @@
       "firstLastNotNull": false,
       "column": "id",
       "count": false,
-      "sum": false,
+      "$idx": 0,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     },
@@ -31,18 +47,21 @@
       "firstLastNotNull": false,
       "column": "Loan_Length",
       "count": false,
-      "sum": false,
+      "$idx": 1,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
       "avg": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
   ],
-  "globalCount": true,
+  "globalCount": false,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -78,8 +97,28 @@
     }
   },
   "enlargeYourBits": true,
+  "outputColumnNameOverrides": {},
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "Amount_Requested",
+            "type": "bigint"
+          },
+          {
+            "name": "id_sum",
+            "type": "bigint"
+          },
+          {
+            "name": "Loan_Length_sum",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
