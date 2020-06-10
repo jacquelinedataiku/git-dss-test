@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1591808820279
+    "lastModifiedOn": 1591808830625
   },
   "creationTag": {
     "versionNumber": 0,
@@ -95,16 +95,8 @@
         "type": "bigint"
       },
       {
-        "name": "Loan_Purpose",
-        "type": "string"
-      },
-      {
         "name": "Loan_Length",
         "type": "bigint"
-      },
-      {
-        "name": "Home_Ownership",
-        "type": "string"
       }
     ],
     "userModified": true
