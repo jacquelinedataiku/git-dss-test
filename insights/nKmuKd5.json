@@ -49,28 +49,35 @@
             {
               "type": "NATURAL",
               "label": "Natural ordering",
-              "sortAscending": true,
-              "$$hashKey": "object:7322"
+              "sortAscending": true
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
-              "label": "Count of records, descending",
-              "$$hashKey": "object:7323"
+              "label": "Count of records, descending"
             },
             {
               "type": "AGGREGATION",
               "measureIdx": 0,
               "label": "Count of records, ascending",
-              "sortAscending": true,
-              "$$hashKey": "object:7324"
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of Age, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 1,
+              "label": "Average of Age, ascending",
+              "sortAscending": true
             }
           ],
           "sort": {
             "type": "NATURAL",
             "label": "Natural ordering",
-            "sortAscending": true,
-            "$$hashKey": "object:7322"
+            "sortAscending": true
           }
         }
       ],
@@ -80,6 +87,17 @@
       "genericMeasures": [
         {
           "function": "COUNT",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        },
+        {
+          "column": "Age",
+          "function": "AVG",
           "type": "NUMERICAL",
           "displayed": true,
           "isA": "measure",
@@ -126,7 +144,7 @@
       "showXAxis": false,
       "showInChartValues": false,
       "showInChartLabels": true,
-      "strokeWidth": 1,
+      "strokeWidth": 3,
       "fillOpacity": 0.6,
       "showXAxisLabel": true,
       "showYAxisLabel": true,
@@ -188,11 +206,11 @@
   "name": "Count by Date_Of_Birth_parsed on train",
   "dashboardCreationId": "4MhyoGr",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1592247073670
+    "lastModifiedOn": 1592247592970
   },
   "creationTag": {
     "versionNumber": 0,
