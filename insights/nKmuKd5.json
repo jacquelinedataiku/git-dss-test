@@ -1,0 +1,205 @@
+{
+  "type": "chart",
+  "params": {
+    "datasetSmartName": "train",
+    "engineType": "LINO",
+    "refreshableSelection": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "def": {
+      "type": "grouped_columns",
+      "variant": "normal",
+      "name": "Count by Date_Of_Birth_parsed",
+      "userEditedName": false,
+      "genericDimension0": [
+        {
+          "column": "Date_Of_Birth_parsed",
+          "type": "DATE",
+          "numParams": {
+            "emptyBinsMode": "AVERAGE"
+          },
+          "dateParams": {
+            "mode": "MONTH"
+          },
+          "maxValues": 0,
+          "generateOthersCategory": true,
+          "oneTickPerBin": false,
+          "filters": [],
+          "isA": "dimension",
+          "possibleSorts": [
+            {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, descending"
+            },
+            {
+              "type": "AGGREGATION",
+              "measureIdx": 0,
+              "label": "Count of records, ascending",
+              "sortAscending": true
+            }
+          ],
+          "sort": {
+            "type": "NATURAL",
+            "label": "Natural ordering",
+            "sortAscending": true
+          }
+        }
+      ],
+      "genericDimension1": [],
+      "facetDimension": [],
+      "animationDimension": [],
+      "genericMeasures": [
+        {
+          "function": "COUNT",
+          "type": "NUMERICAL",
+          "displayed": true,
+          "isA": "measure",
+          "displayAxis": "axis1",
+          "displayType": "column",
+          "computeMode": "NORMAL",
+          "computeModeDim": 0
+        }
+      ],
+      "xDimension": [],
+      "yDimension": [],
+      "uaXDimension": [],
+      "uaYDimension": [],
+      "uaSize": [],
+      "uaShape": [],
+      "uaColor": [],
+      "uaTooltip": [],
+      "groupDimension": [],
+      "xMeasure": [],
+      "yMeasure": [],
+      "colorMeasure": [],
+      "sizeMeasure": [],
+      "geometry": [],
+      "tooltipMeasures": [],
+      "boxplotBreakdownDim": [],
+      "boxplotValue": [],
+      "filters": [
+        {
+          "filterType": "DATE_FACET",
+          "column": "Date_Of_Birth_parsed",
+          "columnType": "DATE",
+          "dateFilterType": "RANGE",
+          "minValue": 3.2227200001E10,
+          "isA": "filter",
+          "excludedValues": {},
+          "explicitExclude": false
+        }
+      ],
+      "axis1LogScale": false,
+      "axis2LogScale": false,
+      "includeZero": true,
+      "smoothing": true,
+      "showLegend": true,
+      "showXAxis": false,
+      "showInChartValues": false,
+      "showInChartLabels": true,
+      "strokeWidth": 1,
+      "fillOpacity": 0.6,
+      "showXAxisLabel": true,
+      "showYAxisLabel": true,
+      "hexbinRadius": 20,
+      "hexbinNumber": 20,
+      "hexbinRadiusMode": "NUM_HEXAGONS",
+      "chartHeight": 200,
+      "singleXAxis": true,
+      "multiTooltips": false,
+      "animationFrameDuration": 3000,
+      "animationRepeat": true,
+      "colorOptions": {
+        "singleColor": "#2678B1",
+        "transparency": 0.75,
+        "colorPalette": "default",
+        "ccScaleMode": "NORMAL",
+        "customPalette": {
+          "id": "__dku_custom__",
+          "name": "Custom Palette",
+          "colors": [],
+          "values": [],
+          "fixedValues": false
+        },
+        "paletteType": "CONTINUOUS",
+        "quantizationMode": "NONE",
+        "numQuantizeSteps": 5,
+        "paletteMiddleValue": 0.0
+      },
+      "bubblesOptions": {
+        "defaultRadius": 5.0,
+        "singleShape": "FILLED_CIRCLE"
+      },
+      "xAxisMode": "NORMAL",
+      "yAxisMode": "NORMAL",
+      "pieOptions": {
+        "donutHoleSize": 54.0
+      },
+      "scatterOptions": {
+        "equalScales": false,
+        "identityLine": false
+      },
+      "mapOptions": {
+        "tilesLayer": "cartodb-positron",
+        "lockSquareGrid": false
+      },
+      "mapGridOptions": {
+        "gridLonDeg": 0.5,
+        "gridLatDeg": 0.5
+      },
+      "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAAD/ElEQVRoQ+2YT2gcZRjGn2c2ZjeJKGhR1HamlXo1J6uCYNscTJmJYsGTeNCboCKomT0oQyDCTlTw5tGDeBJEzYxNERuLooKnnryZzLT+pQrRptnUdl75pvnayWY3O5vsrptm97bw8e37e5/n/fMtscs+3GW86APf6Ir3Fe4r3OYM7PXmbjs3Nf5Xm6/NfV3XLd0Hzq1New72FW5PHhvfoiw9sCq3LFaOLXb6t+rd31WFD3vzAwvV5Xmy8Ewj4P3efGlx6ki1U8noA3cqs+reWoXNcuDGFcc3y+F7ccV+Xp2xJoNT0Yxz9IA7O7rgT5ypF4/lBvOR7xzZSqxdV/inleVPDKPwgrL0Pjd84qxvf9o68OzrkT8x3XvAnmdgairRgSmFs8CmG3wU+85TGth0w5MUuam5wjsd2J19N/YnXr6hgM3JE2P3DpVO11V4E2Bd51n7Wu7/oLDlBqci3zm6aR15nmFVDwWAlEQKb24GTPB+AIRAlKWtcvhVVLEP6zrvBeDmnVIBrzwQglDA002ARyFCgIkCNt3wdOzbj/YE8MEXPy/+O5zM1Y6G/a+F44tv2XN3vvrxHb+/ffwPeJ5hrhyaJuXhfMAQpWQjYP3wyFq61RG1pbHUFeByeDKu2I9lFa4PHH4Z+fZY3hHVVmDT/eyR2H/8G9MN5mLfGc8qDODcgdLIs6ppkRwGhAKcJ7BHIGcIjqr6TQMnKOQlBaxGlzqj3HQdOPgAwF4IqiAHex4YxGUCt24XWITfkXiwJ4AJFKPSD2O6hrMKbwf4IIp/L1SX31cK1wPWfaSRxdtqaascnoBISYDVdgBTZFC7QFnacoOvQV6ByNlGwLqs+sBrGdiWwgAXIt9+TmezVmE1VwXGt2osKUuD3CeJXMhr6azCankBjfMQGQLwa1ZhQAwRrMYzznhHFW4ODBHw+2vAwF2SdtZ8TSsLLMASyUJXgdWQX1PzMoABDWxNBq9EM847GxWGwMAvENyTKtwQmJcIGawdS7mAIQ+lY0ywSqIoSN5Qo1HHVFvLLVl6DfhHAPftImDjNyDZkwILLkYzjq0XjV5QGGQ1qtjH2qhwfWACF0EOZcdSatEOWjotE1UuGUtfA3aDLwD8E/nO8aytt2DphsBF9WPNgAFVZ/hz/aZFg5Ck1RoG8TMS3F0PWLku3QVq/vtqCmy54YeRbz9tToYvkfIksB4YxLBeNERQIHFFf6+ncHNgMUDVg64m4fr6ubFLNwJel/Sa0dkysIAjhCzpGk6BNegGYCFojAByQc9hiBQADgBSFWBYlYKGu/oeVo+HdcBrZ7BE4PbspgXwZkiynJ7XXbo2hlaB8z67dsq5pgrvFJC8cfaB82Zqp577D40QlWWMG3jtAAAAAElFTkSuQmCC",
+      "disableSafetyLimits": false,
+      "useLiveProcessingIfAvailable": true,
+      "legendPlacement": "OUTER_RIGHT"
+    },
+    "maxDataBytes": 157286400
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "Count by Date_Of_Birth_parsed on train",
+  "dashboardCreationId": "4MhyoGr",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1592246618339
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1592246618339
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
