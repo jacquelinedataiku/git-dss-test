@@ -96,10 +96,10 @@
           {
             "tileType": "INSIGHT",
             "box": {
-              "top": -1,
-              "left": -1,
-              "width": 2,
-              "height": 2
+              "top": 4,
+              "left": 5,
+              "width": 7,
+              "height": 4
             },
             "clickAction": "OPEN_INSIGHT",
             "tileParams": {
@@ -126,11 +126,11 @@
   "name": "loan_default\u0027s default dashboard",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 13,
+    "versionNumber": 14,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1592319787047
+    "lastModifiedOn": 1592320627146
   },
   "creationTag": {
     "versionNumber": 0,
