@@ -1,0 +1,90 @@
+{
+  "preFilter": {
+    "distinct": false,
+    "enabled": false
+  },
+  "keys": [
+    {
+      "column": "id"
+    },
+    {
+      "column": "Amount_Requested"
+    },
+    {
+      "column": "Loan_Purpose"
+    },
+    {
+      "column": "Loan_Length"
+    },
+    {
+      "column": "Home_Ownership"
+    },
+    {
+      "column": "Status"
+    },
+    {
+      "column": "Date_Of_Birth"
+    },
+    {
+      "column": "Date_Of_Birth_parsed"
+    },
+    {
+      "column": "Age"
+    },
+    {
+      "column": "Monthly_Income"
+    },
+    {
+      "column": "State"
+    },
+    {
+      "column": "Interest_Rate"
+    },
+    {
+      "column": "FicoAvg"
+    },
+    {
+      "column": "Default"
+    }
+  ],
+  "globalCount": false,
+  "engineParams": {
+    "hive": {
+      "skipPrerunValidate": false,
+      "hiveconf": [],
+      "inheritConf": "default",
+      "addDkuUdf": false,
+      "executionEngine": "HIVECLI_LOCAL"
+    },
+    "sqlPipelineParams": {
+      "pipelineAllowMerge": true,
+      "pipelineAllowStart": true
+    },
+    "impala": {
+      "forceStreamMode": true
+    },
+    "lowerCaseSchemaIfEngineRequiresIt": true,
+    "sparkSQL": {
+      "skipPrerunValidate": false,
+      "pipelineAllowMerge": true,
+      "useGlobalMetastore": false,
+      "pipelineAllowStart": true,
+      "readParams": {
+        "mode": "AUTO",
+        "autoModeRepartitionInto": 10,
+        "map": {}
+      },
+      "overwriteOutputSchema": false,
+      "executionEngine": "SPARK_SUBMIT",
+      "sparkConfig": {
+        "inheritConf": "default",
+        "conf": []
+      }
+    }
+  },
+  "outputColumnNameOverrides": {},
+  "postFilter": {
+    "distinct": false,
+    "enabled": false
+  }
+}
