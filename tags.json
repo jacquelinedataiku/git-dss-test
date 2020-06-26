@@ -3,16 +3,20 @@
     "duplicated": {
       "color": "#3A85AD"
     },
+    "deleted-recipe-editor": {
+      "color": "#90a8b7"
+    },
     "test_tag": {
       "color": "#a088bd"
+    },
+    "recipe-editor": {
+      "color": "#1ac2ab"
     },
     "jenny": {
       "color": "#FFD83D"
     },
     "glenn": {
       "color": "#90a8b7"
-    },
-    "recipe-editor": {},
-    "deleted-recipe-editor": {}
+    }
   }
 }
