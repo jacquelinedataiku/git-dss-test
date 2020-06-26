@@ -51,7 +51,7 @@
   },
   "tutorialProject": false,
   "settings": {
-    "flowAnchorSourcesAndSinks": true,
+    "flowAnchorSourcesAndSinks": false,
     "gitCommitMode": "AUTO",
     "useRemoteGit": true,
     "disableAutomaticTriggers": false,
@@ -207,11 +207,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 8,
+    "versionNumber": 9,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1592319786272
+    "lastModifiedOn": 1593178593241
   },
   "creationTag": {
     "versionNumber": 0,
