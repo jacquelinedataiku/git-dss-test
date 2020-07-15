@@ -26,8 +26,8 @@
     },
     "sorting": [
       {
-        "column": "Date_Of_Birth",
-        "ascending": false
+        "column": "Date_Of_Birth_parsed",
+        "ascending": true
       }
     ],
     "analysisColumnData": {},
