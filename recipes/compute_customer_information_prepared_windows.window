@@ -286,11 +286,11 @@
   "legacyUnboundedWindowStreamBehavior": false,
   "windows": [
     {
-      "windowUpperBound": 0,
+      "windowUpperBound": 2,
       "enablePartitioning": true,
       "enableOrdering": true,
       "precedingRows": 0,
-      "limitFollowing": false,
+      "limitFollowing": true,
       "followingRows": 0,
       "partitioningColumns": [
         "State"
@@ -303,7 +303,7 @@
           "desc": false
         }
       ],
-      "limitPreceding": true,
+      "limitPreceding": false,
       "windowLowerBound": 2,
       "enableLimits": true
     }
