@@ -140,7 +140,7 @@
       "count": false,
       "$idx": 5,
       "lagValues": "1",
-      "sum": false,
+      "sum": true,
       "concat": false,
       "type": "bigint",
       "lead": false,
@@ -356,6 +356,10 @@
           {
             "name": "Default",
             "type": "double"
+          },
+          {
+            "name": "Age_sum",
+            "type": "bigint"
           }
         ],
         "userModified": false
