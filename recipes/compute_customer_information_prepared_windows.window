@@ -297,7 +297,7 @@
       "partitioningColumns": [
         "State"
       ],
-      "windowLimitMode": "ROWS",
+      "windowLimitMode": "RANGE",
       "windowDateRangeUnit": "HOUR",
       "orders": [
         {
