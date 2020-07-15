@@ -135,11 +135,11 @@
       "lagDiff": false,
       "$idx": 5,
       "lagValues": "1",
-      "sum": false,
+      "sum": true,
       "type": "bigint",
       "dateDiffUnit": "DAY",
       "min": false,
-      "avg": false,
+      "avg": true,
       "lag": false,
       "leadValues": "1",
       "$selected": false,
@@ -157,7 +157,7 @@
       "concatDistinct": false,
       "countDistinct": false,
       "leadDiff": false,
-      "first": true
+      "first": false
     },
     {
       "last": false,
@@ -360,7 +360,11 @@
             "type": "double"
           },
           {
-            "name": "Age_first",
+            "name": "Age_avg",
+            "type": "double"
+          },
+          {
+            "name": "Age_sum",
             "type": "bigint"
           }
         ],
