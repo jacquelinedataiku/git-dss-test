@@ -140,7 +140,7 @@
       "count": false,
       "$idx": 5,
       "lagValues": "1",
-      "sum": true,
+      "sum": false,
       "concat": false,
       "type": "bigint",
       "lead": false,
@@ -286,16 +286,16 @@
   "legacyUnboundedWindowStreamBehavior": false,
   "windows": [
     {
-      "windowUpperBound": 2,
+      "windowUpperBound": 0,
       "enablePartitioning": true,
       "enableOrdering": true,
-      "precedingRows": 0,
-      "limitFollowing": true,
+      "precedingRows": 2,
+      "limitFollowing": false,
       "followingRows": 0,
       "partitioningColumns": [
         "State"
       ],
-      "windowLimitMode": "RANGE",
+      "windowLimitMode": "ROWS",
       "windowDateRangeUnit": "HOUR",
       "orders": [
         {
@@ -303,7 +303,7 @@
           "desc": false
         }
       ],
-      "limitPreceding": false,
+      "limitPreceding": true,
       "windowLowerBound": 2,
       "enableLimits": true
     }
@@ -356,10 +356,6 @@
           {
             "name": "Default",
             "type": "double"
-          },
-          {
-            "name": "Age_sum",
-            "type": "bigint"
           }
         ],
         "userModified": false
