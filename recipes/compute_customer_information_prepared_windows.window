@@ -132,30 +132,32 @@
       "first": false
     },
     {
-      "last": false,
       "lagDiff": false,
-      "max": false,
-      "firstLastNotNull": false,
-      "column": "Age",
-      "count": false,
       "$idx": 5,
       "lagValues": "1",
-      "sum": true,
-      "concat": false,
+      "sum": false,
       "type": "bigint",
-      "lead": false,
-      "concatDistinct": false,
       "dateDiffUnit": "DAY",
       "min": false,
-      "countDistinct": false,
       "avg": false,
       "lag": false,
       "leadValues": "1",
       "$selected": false,
       "stddev": false,
       "value": true,
+      "orderColumn": "id",
+      "concatSeparator": ",",
+      "last": false,
+      "max": false,
+      "firstLastNotNull": false,
+      "column": "Age",
+      "count": false,
+      "concat": false,
+      "lead": false,
+      "concatDistinct": false,
+      "countDistinct": false,
       "leadDiff": false,
-      "first": false
+      "first": true
     },
     {
       "last": false,
@@ -358,7 +360,7 @@
             "type": "double"
           },
           {
-            "name": "Age_sum",
+            "name": "Age_first",
             "type": "bigint"
           }
         ],
