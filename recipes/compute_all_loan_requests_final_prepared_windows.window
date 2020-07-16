@@ -4,6 +4,7 @@
     "enabled": false
   },
   "ntileValues": "10",
+  "keys": [],
   "values": [
     {
       "last": false,
@@ -12,9 +13,11 @@
       "firstLastNotNull": false,
       "column": "id",
       "count": false,
+      "$idx": 0,
       "lagValues": "1",
-      "sum": false,
+      "sum": true,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -23,6 +26,7 @@
       "avg": false,
       "lag": false,
       "leadValues": "1",
+      "$selected": false,
       "stddev": false,
       "value": true,
       "leadDiff": false,
@@ -35,9 +39,11 @@
       "firstLastNotNull": false,
       "column": "Amount_Requested",
       "count": false,
+      "$idx": 1,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "bigint",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -58,9 +64,11 @@
       "firstLastNotNull": false,
       "column": "Loan_Purpose",
       "count": false,
+      "$idx": 2,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -81,9 +89,11 @@
       "firstLastNotNull": false,
       "column": "Loan_Length",
       "count": false,
+      "$idx": 3,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -104,9 +114,11 @@
       "firstLastNotNull": false,
       "column": "Home_Ownership",
       "count": false,
+      "$idx": 4,
       "lagValues": "1",
       "sum": false,
       "concat": false,
+      "type": "string",
       "lead": false,
       "concatDistinct": false,
       "dateDiffUnit": "DAY",
@@ -124,20 +136,54 @@
   "legacyUnboundedWindowStreamBehavior": false,
   "windows": [
     {
-      "windowUpperBound": 0.0,
-      "enablePartitioning": false,
+      "windowUpperBound": 0,
+      "enablePartitioning": true,
       "enableOrdering": false,
       "precedingRows": 0,
       "limitFollowing": false,
       "orders": [],
       "limitPreceding": false,
       "followingRows": 0,
-      "windowLowerBound": 0.0,
-      "enableLimits": false
+      "windowLowerBound": 0,
+      "enableLimits": false,
+      "partitioningColumns": [
+        "Home_Ownership"
+      ]
     }
   ],
   "computedColumns": [],
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "id",
+            "type": "bigint"
+          },
+          {
+            "name": "Amount_Requested",
+            "type": "bigint"
+          },
+          {
+            "name": "Loan_Purpose",
+            "type": "string"
+          },
+          {
+            "name": "Loan_Length",
+            "type": "string"
+          },
+          {
+            "name": "Home_Ownership",
+            "type": "string"
+          },
+          {
+            "name": "id_sum",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   },
@@ -179,5 +225,6 @@
   "ntile": false,
   "rank": false,
   "denseRank": false,
-  "rowNumber": false
+  "rowNumber": false,
+  "outputColumnNameOverrides": {}
 }
