@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594826093052
+    "lastModifiedOn": 1594917830918
   },
   "creationTag": {
     "versionNumber": 0,
@@ -133,10 +133,6 @@
       {
         "name": "Age_avg",
         "type": "double"
-      },
-      {
-        "name": "Age_sum",
-        "type": "bigint"
       }
     ],
     "userModified": true
