@@ -307,7 +307,7 @@
       ],
       "limitPreceding": false,
       "windowLowerBound": 2,
-      "enableLimits": false
+      "enableLimits": true
     }
   ],
   "computedColumns": [],
