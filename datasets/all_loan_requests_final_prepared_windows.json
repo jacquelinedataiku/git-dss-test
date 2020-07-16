@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1594916030815
+    "lastModifiedOn": 1594916050878
   },
   "creationTag": {
     "versionNumber": 0,
@@ -105,6 +105,10 @@
       {
         "name": "Home_Ownership",
         "type": "string"
+      },
+      {
+        "name": "id_sum",
+        "type": "bigint"
       }
     ],
     "userModified": true
