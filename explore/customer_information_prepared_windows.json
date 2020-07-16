@@ -62,43 +62,7 @@
       "autoRefresh": true
     },
     "globalSearchQuery": "",
-    "explorationFilters": [
-      {
-        "column": "State",
-        "type": "columnFilter",
-        "currentMode": "FACET",
-        "active": true,
-        "facet": {
-          "type": "facet",
-          "column": "State",
-          "columnType": "ALPHANUM",
-          "currentMode": "ALPHANUM",
-          "sort": "count",
-          "selectedValues": {
-            "CA": true
-          }
-        },
-        "alphanumFilter": {
-          "type": "alphanum",
-          "column": "State",
-          "values": [],
-          "params": {
-            "mode": "full_string",
-            "normalization": "exact"
-          }
-        },
-        "validityFilter": {
-          "type": "validity",
-          "column": "State",
-          "params": {
-            "type": "USStateMeaning",
-            "ok": true,
-            "nok": true,
-            "empty": true
-          }
-        }
-      }
-    ],
+    "explorationFilters": [],
     "previewMode": "ALL_ROWS"
   },
   "charts": [
