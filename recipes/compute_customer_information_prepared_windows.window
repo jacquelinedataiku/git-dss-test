@@ -290,7 +290,7 @@
     {
       "windowUpperBound": 0,
       "enablePartitioning": true,
-      "enableOrdering": false,
+      "enableOrdering": true,
       "precedingRows": 2,
       "limitFollowing": false,
       "followingRows": 0,
@@ -305,7 +305,7 @@
           "desc": false
         }
       ],
-      "limitPreceding": true,
+      "limitPreceding": false,
       "windowLowerBound": 2,
       "enableLimits": false
     }
