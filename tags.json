@@ -17,6 +17,8 @@
     },
     "glenn": {
       "color": "#90a8b7"
-    }
+    },
+    "origin:sql_import": {},
+    "PostgreSQL_jacquelinekuo": {}
   }
 }
