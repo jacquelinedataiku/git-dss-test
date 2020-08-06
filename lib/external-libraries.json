@@ -4,11 +4,17 @@
       "remote": "https://bitbucket.org/jacquelinek_dataiku/dataiku/src/master/",
       "checkout": "",
       "remotePath": ""
+    },
+    "Dataiku": {
+      "remote": "https://bitbucket.org/jacquelinek_dataiku/dataiku/src/master/",
+      "checkout": "",
+      "remotePath": ""
     }
   },
   "pythonPath": [
     "python",
-    "local"
+    "local",
+    "Dataiku"
   ],
   "rsrcPath": [
     "R"
