@@ -1,4 +1,4 @@
-import time
+from datetime import date
 
-def get_now():
-    return(time.time())
+def get_today():
+    return(date.today())
