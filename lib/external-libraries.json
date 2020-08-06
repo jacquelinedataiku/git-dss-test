@@ -9,6 +9,11 @@
       "remote": "https://bitbucket.org/jacquelinek_dataiku/dataiku/src/master/",
       "checkout": "",
       "remotePath": ""
+    },
+    "/src/master/": {
+      "remote": "git@bitbucket.org:jacquelinek_dataiku/dataiku",
+      "checkout": "",
+      "remotePath": ""
     }
   },
   "pythonPath": [
