@@ -16,7 +16,7 @@
       "remotePath": ""
     },
     "/code1": {
-      "remote": "git@bitbucket.org:jacquelinek_dataiku/dataiku",
+      "remote": "git@bitbucket.org:jacquelinek_dataiku/dataiku.git",
       "checkout": "",
       "remotePath": ""
     }
