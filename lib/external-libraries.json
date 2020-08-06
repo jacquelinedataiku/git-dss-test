@@ -1,7 +1,14 @@
 {
-  "gitReferences": {},
+  "gitReferences": {
+    "local": {
+      "remote": "https://bitbucket.org/jacquelinek_dataiku/dataiku/src/master/",
+      "checkout": "",
+      "remotePath": ""
+    }
+  },
   "pythonPath": [
-    "python"
+    "python",
+    "local"
   ],
   "rsrcPath": [
     "R"
