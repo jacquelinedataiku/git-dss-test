@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1596834463361
+    "lastModifiedOn": 1596834510202
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,49 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "lat_square_center",
+        "type": "double"
+      },
+      {
+        "name": "lon_square_center",
+        "type": "double"
+      },
+      {
+        "name": "cell_grid_id",
+        "type": "bigint"
+      },
+      {
+        "name": "category_entertainment",
+        "type": "double"
+      },
+      {
+        "name": "category_food",
+        "type": "double"
+      },
+      {
+        "name": "category_public_service",
+        "type": "double"
+      },
+      {
+        "name": "category_shop",
+        "type": "double"
+      },
+      {
+        "name": "category_supermarket",
+        "type": "double"
+      },
+      {
+        "name": "category_transport",
+        "type": "double"
+      },
+      {
+        "name": "geom",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
