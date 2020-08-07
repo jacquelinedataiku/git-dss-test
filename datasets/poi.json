@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1596834459998
+    "lastModifiedOn": 1596834508848
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,25 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "id",
+        "type": "bigint"
+      },
+      {
+        "name": "lat",
+        "type": "double"
+      },
+      {
+        "name": "lon",
+        "type": "double"
+      },
+      {
+        "name": "tags",
+        "type": "string"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
