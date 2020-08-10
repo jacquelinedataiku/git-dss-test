@@ -133,21 +133,70 @@
       "copySelectionFromScript": true,
       "engineType": "LINO",
       "def": {
-        "type": "multi_columns_lines",
+        "type": "grouped_columns",
         "variant": "normal",
-        "name": "Avg. of Monthly_Income by Date_Of_Birth_parsed",
+        "name": "Avg. of Monthly_Income by Age",
         "userEditedName": false,
         "genericDimension0": [
           {
-            "column": "Date_Of_Birth_parsed",
-            "type": "DATE",
+            "column": "Age",
+            "type": "NUMERICAL",
             "numParams": {
-              "emptyBinsMode": "AVERAGE"
+              "mode": "FIXED_NB",
+              "nbBins": 30,
+              "binSize": 100,
+              "emptyBinsMode": "ZEROS"
             },
-            "dateParams": {
-              "mode": "AUTOMATIC"
+            "maxValues": 100,
+            "generateOthersCategory": true,
+            "oneTickPerBin": false,
+            "filters": [],
+            "isA": "dimension",
+            "possibleSorts": [
+              {
+                "type": "NATURAL",
+                "label": "Natural ordering",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Monthly_Income, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 0,
+                "label": "Average of Monthly_Income, ascending",
+                "sortAscending": true
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of FicoAvg, descending"
+              },
+              {
+                "type": "AGGREGATION",
+                "measureIdx": 1,
+                "label": "Average of FicoAvg, ascending",
+                "sortAscending": true
+              }
+            ],
+            "sort": {
+              "type": "NATURAL",
+              "label": "Natural ordering",
+              "sortAscending": true
+            }
+          }
+        ],
+        "genericDimension1": [],
+        "facetDimension": [
+          {
+            "column": "State",
+            "type": "ALPHANUM",
+            "numParams": {
+              "emptyBinsMode": "ZEROS"
             },
-            "maxValues": 0,
+            "maxValues": 20,
             "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
@@ -183,14 +232,11 @@
             ],
             "sort": {
               "type": "AGGREGATION",
-              "measureIdx": 1,
-              "label": "Average of FicoAvg, ascending",
-              "sortAscending": true
+              "measureIdx": 0,
+              "label": "Average of Monthly_Income, descending"
             }
           }
         ],
-        "genericDimension1": [],
-        "facetDimension": [],
         "animationDimension": [],
         "genericMeasures": [
           {
@@ -200,6 +246,17 @@
             "displayed": true,
             "isA": "measure",
             "displayAxis": "axis1",
+            "displayType": "column",
+            "computeMode": "NORMAL",
+            "computeModeDim": 0
+          },
+          {
+            "column": "FicoAvg",
+            "function": "AVG",
+            "type": "NUMERICAL",
+            "displayed": true,
+            "isA": "measure",
+            "displayAxis": "axis2",
             "displayType": "column",
             "computeMode": "NORMAL",
             "computeModeDim": 0
@@ -219,42 +276,10 @@
         "colorMeasure": [],
         "sizeMeasure": [],
         "geometry": [],
-        "tooltipMeasures": [
-          {
-            "column": "FicoAvg",
-            "function": "AVG",
-            "type": "NUMERICAL",
-            "displayed": true,
-            "isA": "measure",
-            "displayAxis": "axis1",
-            "displayType": "column",
-            "computeModeDim": 0
-          }
-        ],
+        "tooltipMeasures": [],
         "boxplotBreakdownDim": [],
         "boxplotValue": [],
-        "filters": [
-          {
-            "filterType": "NUMERICAL_FACET",
-            "column": "Monthly_Income",
-            "columnType": "NUMERICAL",
-            "maxValue": 30200.0,
-            "isA": "filter",
-            "excludedValues": {},
-            "explicitExclude": false
-          },
-          {
-            "filterType": "DATE_FACET",
-            "column": "Date_Of_Birth_parsed",
-            "columnType": "DATE",
-            "dateFilterType": "RANGE",
-            "minValue": 3.2227200001E10,
-            "maxValue": 6.21081852632E11,
-            "isA": "filter",
-            "excludedValues": {},
-            "explicitExclude": false
-          }
-        ],
+        "filters": [],
         "axis1LogScale": false,
         "axis2LogScale": false,
         "includeZero": true,
@@ -271,7 +296,7 @@
         "hexbinNumber": 20,
         "hexbinRadiusMode": "NUM_HEXAGONS",
         "chartHeight": 200,
-        "singleXAxis": true,
+        "singleXAxis": false,
         "multiTooltips": false,
         "animationFrameDuration": 3000,
         "animationRepeat": true,
@@ -317,7 +342,6 @@
           "gridLonDeg": 0.6,
           "gridLatDeg": 0.6
         },
-        "thumbnailData": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAoCAYAAACiu5n/AAABm0lEQVRoQ+1ZsU7DMBA9p2kFggGxMFXKwgz9AVRWBiYkRj6Ar2JEYuIHqPgBEGuXSJ26IAZQURtiZCE3rmXj4NolhZfRju/u3b07Xy6M/tnDQuDt5493Us4gOzwOITOWDAD28eyqIyz1TQt23kn5tbC5LrO8I9zPny6JyjPdQXUV+zhWnokOWCpQwdgAz4FwfkWMXdT1vkmHzSlRAKs0VQtStZ7cmCJsA+wC5NpXwZsAz95fT9sb27cuB1spHQuwavgiY74qvViTujnRMyPa1UGsLWATZQEYESYCpYlILVq2OiHWf7VoxcphAFY8gAjr7ZtOj2UbD1dLGeJaAqVBaQPPVtFaokoH6qWRw8hh5HDVoOMeno9k/SYevo2H6Zw6xPtzHw++gKtzbDLIDk7WppcGYCKqQ2lE2DX7bUqVBqVB6WoQb2YtqvSiX5r2eYgcRg4vmcNHo4d9nUb33d5QrqczPi3arGO71hKWTEpebop99Zyrl/7Ju0mxMyrTl66Q+Tb+yLf2Wtl38oVs7x/iLsObug/ATY1MKLs+AfnwUGUyi87yAAAAAElFTkSuQmCC",
         "disableSafetyLimits": false,
         "useLiveProcessingIfAvailable": true,
         "legendPlacement": "OUTER_RIGHT"
