@@ -3,65 +3,7 @@
     "steps": [],
     "maxProcessedMemTableBytes": -1,
     "columnsSelection": {
-      "mode": "SELECT",
-      "list": [
-        {
-          "name": "id",
-          "d": false
-        },
-        {
-          "name": "Amount_Requested",
-          "d": true
-        },
-        {
-          "name": "Loan_Purpose",
-          "d": false
-        },
-        {
-          "name": "Loan_Length",
-          "d": false
-        },
-        {
-          "name": "Home_Ownership",
-          "d": false
-        },
-        {
-          "name": "Status",
-          "d": false
-        },
-        {
-          "name": "Date_Of_Birth",
-          "d": true
-        },
-        {
-          "name": "Date_Of_Birth_parsed",
-          "d": false
-        },
-        {
-          "name": "Age",
-          "d": true
-        },
-        {
-          "name": "Monthly_Income",
-          "d": false
-        },
-        {
-          "name": "State",
-          "d": true
-        },
-        {
-          "name": "Interest_Rate",
-          "d": false
-        },
-        {
-          "name": "FicoAvg",
-          "d": true
-        },
-        {
-          "name": "Default",
-          "d": false
-        }
-      ]
+      "mode": "ALL"
     },
     "columnWidthsByName": {
       "id": 100,
