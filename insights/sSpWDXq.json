@@ -1,0 +1,74 @@
+{
+  "type": "dataset_table",
+  "params": {
+    "datasetSmartName": "all_loan_requests",
+    "shakerScript": {
+      "steps": [],
+      "maxProcessedMemTableBytes": -1,
+      "columnsSelection": {
+        "mode": "ALL"
+      },
+      "columnWidthsByName": {},
+      "coloring": {
+        "scheme": "MEANING_AND_STATUS",
+        "individualColumns": [],
+        "valueColoringMode": "HASH"
+      },
+      "sorting": [],
+      "analysisColumnData": {},
+      "explorationSampling": {
+        "selection": {
+          "maxStoredBytes": 104857600,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "HEAD_SEQUENTIAL",
+          "maxRecords": 10000,
+          "targetRatio": 0.02,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        },
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
+      "vizSampling": {
+        "autoRefreshSample": false,
+        "_refreshTrigger": 0
+      },
+      "exploreUIParams": {},
+      "globalSearchQuery": "",
+      "explorationFilters": [],
+      "previewMode": "ALL_ROWS"
+    }
+  },
+  "owner": "admin",
+  "listed": false,
+  "name": "all_loan_requests table",
+  "dashboardCreationId": "EpjFASp",
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1601501740385
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "admin"
+    },
+    "lastModifiedOn": 1601501740385
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
