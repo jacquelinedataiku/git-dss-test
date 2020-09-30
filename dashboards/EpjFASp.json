@@ -3,7 +3,32 @@
     {
       "id": "pnXAeR9",
       "grid": {
-        "tiles": []
+        "tiles": [
+          {
+            "tileType": "INSIGHT",
+            "box": {
+              "top": 0,
+              "left": 0,
+              "width": 6,
+              "height": 3
+            },
+            "clickAction": "OPEN_INSIGHT",
+            "tileParams": {
+              "showName": true,
+              "showDescription": true,
+              "showCustomFields": true,
+              "showStorageType": false,
+              "showMeaning": false,
+              "showProgressBar": false
+            },
+            "autoLoad": true,
+            "showTitle": "YES",
+            "insightId": "sSpWDXq",
+            "insightType": "dataset_table",
+            "displayMode": "INSIGHT",
+            "resizeImageMode": "FIT_SIZE"
+          }
+        ]
       },
       "showTitle": false
     }
@@ -13,11 +38,11 @@
   "name": "Demo",
   "showGrid": true,
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1601501727551
+    "lastModifiedOn": 1601501740722
   },
   "creationTag": {
     "versionNumber": 0,
