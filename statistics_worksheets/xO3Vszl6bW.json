@@ -29,16 +29,287 @@
     "type": "worksheet_root",
     "confidenceLevel": 0.95,
     "showConfidenceInterval": false,
-    "cards": [],
+    "cards": [
+      {
+        "type": "bivariate_header",
+        "yColumn": {
+          "name": "Monthly_Income",
+          "type": "CONTINUOUS"
+        },
+        "showMosaicPlot": true,
+        "showHistogram": true,
+        "showScatterPlot": true,
+        "showFrequencyTable": true,
+        "showBoxPlot": true,
+        "showSummary": true,
+        "xColumns": [
+          {
+            "name": "Amount_Requested",
+            "type": "CONTINUOUS"
+          },
+          {
+            "name": "FicoAvg",
+            "type": "CONTINUOUS"
+          }
+        ],
+        "cards": [
+          {
+            "type": "column_card",
+            "column": {
+              "name": "Amount_Requested",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "Amount_Requested",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Monthly_Income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "wnFB9BZ"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Amount_Requested",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Monthly_Income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "oQNxKYq"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Amount_Requested",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Monthly_Income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "FSCOJLf"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Amount_Requested",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Monthly_Income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "PLInyLs"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "Amount_Requested",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Monthly_Income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "mDKihwL"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "Amount_Requested",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Monthly_Income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "fBcfZfA"
+              }
+            ],
+            "id": "B2SWKE4"
+          },
+          {
+            "type": "column_card",
+            "column": {
+              "name": "FicoAvg",
+              "type": "CONTINUOUS"
+            },
+            "cards": [
+              {
+                "type": "scatter_plot",
+                "symbolSize": 4,
+                "xColumn": {
+                  "name": "FicoAvg",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Monthly_Income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "HLZ4coC"
+              },
+              {
+                "type": "bivariate_box_plot",
+                "maxValues": 5,
+                "groupOthers": true,
+                "binningMode": "AUTO",
+                "customBinningBoundaries": [],
+                "xColumn": {
+                  "name": "FicoAvg",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Monthly_Income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "SWkjtCG"
+              },
+              {
+                "type": "bivariate_histogram",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "FicoAvg",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Monthly_Income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "kzKIsp5"
+              },
+              {
+                "type": "mosaic_plot",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "FicoAvg",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Monthly_Income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "VHYdISf"
+              },
+              {
+                "type": "bivariate_summary",
+                "confidenceLevel": 0.95,
+                "showConfidenceInterval": false,
+                "compute": {
+                  "spearman": true,
+                  "pearson": true,
+                  "totalCount": true,
+                  "covariance": true,
+                  "kendallTau": true,
+                  "mutualInformation": true,
+                  "completeCount": true
+                },
+                "xColumn": {
+                  "name": "FicoAvg",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Monthly_Income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "XEkzu0B"
+              },
+              {
+                "type": "bivariate_frequency_table",
+                "xBinningMode": "AUTO",
+                "yBinningMode": "AUTO",
+                "maxValuesX": 5,
+                "maxValuesY": 5,
+                "groupWithOthersX": true,
+                "groupWithOthersY": true,
+                "xCustomBinningBoundaries": [],
+                "yCustomBinningBoundaries": [],
+                "xColumn": {
+                  "name": "FicoAvg",
+                  "type": "CONTINUOUS"
+                },
+                "yColumn": {
+                  "name": "Monthly_Income",
+                  "type": "CONTINUOUS"
+                },
+                "id": "ua8wkGq"
+              }
+            ],
+            "id": "mdkg4V5"
+          }
+        ],
+        "id": "z43ZrJe"
+      }
+    ],
     "id": "8yo7JiY"
   },
   "name": "Worksheet",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1591275917402
+    "lastModifiedOn": 1602038485875
   },
   "creationTag": {
     "versionNumber": 0,
