@@ -396,7 +396,7 @@
   "modeling": {
     "skipExpensiveReports": false,
     "random_forest_regression": {
-      "enabled": true,
+      "enabled": false,
       "n_estimators": {
         "values": [
           100
@@ -699,7 +699,7 @@
         "nValues": 0,
         "gridMode": "EXPLICIT"
       },
-      "enabled": false
+      "enabled": true
     },
     "leastsquare_regression": {
       "enabled": false,
