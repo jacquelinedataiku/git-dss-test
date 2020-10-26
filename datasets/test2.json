@@ -59,11 +59,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1603718338601
+    "lastModifiedOn": 1603718443105
   },
   "creationTag": {
     "versionNumber": 0,
@@ -85,8 +85,33 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {
+        "name": "id",
+        "type": "bigint"
+      },
+      {
+        "name": "Amount_Requested",
+        "type": "bigint"
+      },
+      {
+        "name": "Loan_Purpose",
+        "type": "string"
+      },
+      {
+        "name": "Loan_Length",
+        "type": "bigint"
+      },
+      {
+        "name": "Home_Ownership",
+        "type": "string"
+      },
+      {
+        "name": "index",
+        "type": "bigint"
+      }
+    ],
+    "userModified": false
   },
   "metrics": {
     "probes": [
