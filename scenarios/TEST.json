@@ -5,11 +5,11 @@
   "name": "test",
   "active": false,
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1596731865182
+    "lastModifiedOn": 1603911991742
   },
   "checklists": {
     "checklists": []
@@ -41,11 +41,37 @@
           "builds": [
             {
               "type": "DATASET",
-              "itemId": "test_scored",
+              "itemId": "customer_information_prepared",
               "partitionsSpec": ""
             }
           ],
           "jobType": "RECURSIVE_FORCED_BUILD",
+          "refreshHiveMetastore": true,
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "build_0_true_d_all_loan_requests_final_prepared",
+        "type": "build_flowitem",
+        "name": "Step #2",
+        "runConditionType": "RUN_ALWAYS",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "builds": [
+            {
+              "type": "DATASET",
+              "itemId": "all_loan_requests_final_prepared",
+              "partitionsSpec": ""
+            }
+          ],
+          "jobType": "RECURSIVE_BUILD",
           "refreshHiveMetastore": true,
           "proceedOnFailure": false
         }
