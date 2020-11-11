@@ -77,19 +77,19 @@
       "def": {
         "type": "grouped_columns",
         "variant": "normal",
-        "name": "Avg. of Monthly_Income by Age",
+        "name": "Avg. of Monthly_Income by Date_Of_Birth_parsed",
         "userEditedName": false,
         "genericDimension0": [
           {
-            "column": "Age",
-            "type": "NUMERICAL",
+            "column": "Date_Of_Birth_parsed",
+            "type": "DATE",
             "numParams": {
-              "mode": "FIXED_NB",
-              "nbBins": 30,
-              "binSize": 100,
-              "emptyBinsMode": "ZEROS"
+              "emptyBinsMode": "AVERAGE"
             },
-            "maxValues": 100,
+            "dateParams": {
+              "mode": "AUTOMATIC"
+            },
+            "maxValues": 0,
             "generateOthersCategory": true,
             "oneTickPerBin": false,
             "filters": [],
