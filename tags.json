@@ -12,13 +12,13 @@
     "recipe-editor": {
       "color": "#1ac2ab"
     },
+    "origin:sql_import": {},
     "jenny": {
       "color": "#FFD83D"
     },
+    "PostgreSQL_jacquelinekuo": {},
     "glenn": {
       "color": "#90a8b7"
-    },
-    "origin:sql_import": {},
-    "PostgreSQL_jacquelinekuo": {}
+    }
   }
 }
