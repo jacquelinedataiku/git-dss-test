@@ -178,7 +178,7 @@
       }
     }
   },
-  "name": "loan_default",
+  "name": "Git_Demo",
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -234,11 +234,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 14,
+    "versionNumber": 15,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1606227775969
+    "lastModifiedOn": 1606227778590
   },
   "creationTag": {
     "versionNumber": 0,
@@ -247,7 +247,7 @@
     },
     "lastModifiedOn": 1588275346689
   },
-  "shortDesc": "The project *loan_default* was created by Administrator on Apr 30th 2020",
+  "shortDesc": "The project *loan_default* was created by Administrator on Apr 30th 2020\nThe project *GIT_DEMO* was copied from *LOAN_DEFAULT* by Administrator on Nov 24th 2020",
   "tags": [
     "duplicated"
   ],
