@@ -53,6 +53,8 @@
     "objects": []
   },
   "projectType": "REGULAR",
+  "projectAppType": "REGULAR",
+  "hasSetupSection": false,
   "bundleExporterSettings": {
     "exportOptions": {
       "exportUploads": false,
@@ -60,6 +62,9 @@
       "exportAnalysisModels": false,
       "exportSavedModels": false,
       "exportManagedFolders": false,
+      "exportModelEvaluationStores": false,
+      "exportProjectResources": true,
+      "exportLabelingTasks": false,
       "exportAllInputDatasets": false,
       "exportAllDatasets": false,
       "exportAllInputManagedFolders": false,
@@ -68,11 +73,16 @@
       "useManualPluginsInfo": false,
       "includedDatasetsData": [],
       "includedSavedModels": [],
+      "includedModelEvaluationStores": [],
       "includedManagedFolders": [],
-      "shareAllInputDatasets": false
+      "includedCodeStudios": [],
+      "includedLabelingTasks": [],
+      "shareAllInputDatasets": false,
+      "exportForeignObjectsReferences": true
     }
   },
   "owner": "admin",
+  "permissionsVersion": "LEGACY",
   "permissions": [],
   "additionalDashboardUsers": {
     "users": []
@@ -80,6 +90,10 @@
   "tutorialProject": false,
   "settings": {
     "flowAnchorSourcesAndSinks": false,
+    "flowDisplaySettings": {
+      "zonesGraphRenderingAlgorithm": "DOT_OLDRANK",
+      "zonesGraphConnectZones": true
+    },
     "gitCommitMode": "AUTO",
     "useRemoteGit": true,
     "disableAutomaticTriggers": false,
@@ -92,6 +106,9 @@
       "mergeSqlPipelines": false,
       "pruneBeforeSqlPipelines": true
     },
+    "sharingRequestsEnabled": "INHERIT",
+    "limitedVisibilityEnabled": "INHERIT",
+    "accessRequestsEnabled": "INHERIT",
     "limitsSettings": {
       "memSampleBytes": {
         "soft": -1,
@@ -117,11 +134,15 @@
     },
     "codeEnvs": {
       "python": {
-        "useBuiltinEnv": true,
+        "mode": "INHERIT",
         "preventOverride": false
       },
       "r": {
-        "useBuiltinEnv": true,
+        "mode": "INHERIT",
+        "preventOverride": false
+      },
+      "julia": {
+        "mode": "INHERIT",
         "preventOverride": false
       }
     },
@@ -172,13 +193,18 @@
           "initialReplicas": 1,
           "hpa": false,
           "hpaTargetCPUPercent": 0,
+          "hpaMetrics": [],
           "hpaMinPods": 0,
-          "hpaMaxPods": 0
-        }
+          "hpaMaxPods": 0,
+          "hpaAnnotations": []
+        },
+        "deploymentModifier": {}
       }
-    }
+    },
+    "dkuProperties": []
   },
-  "name": "Git_Demo",
+  "name": "Library Example",
+  "imgPattern": 1,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -234,11 +260,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 15,
+    "versionNumber": 16,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1606227778590
+    "lastModifiedOn": 1675263849589
   },
   "creationTag": {
     "versionNumber": 0,
