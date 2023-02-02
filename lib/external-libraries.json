@@ -34,6 +34,10 @@
       "remote": "git@github.com:Pradnya1208/Telecom-Customer-Churn-prediction.git",
       "checkout": "refs/heads/main",
       "remotePath": "/Scripts",
+      "lastHash": "2f4c4853b021ac2061abac803bd9c1c2b676c9d8",
+      "conflictingFiles": [],
+      "resolvedFiles": [],
+      "faultyHash": "",
       "isDirty": false
     }
   },
