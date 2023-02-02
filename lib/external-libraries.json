@@ -3,33 +3,45 @@
     "local": {
       "remote": "https://bitbucket.org/jacquelinek_dataiku/dataiku/src/master/",
       "checkout": "",
-      "remotePath": ""
+      "remotePath": "",
+      "isDirty": false
     },
     "Dataiku": {
       "remote": "https://bitbucket.org/jacquelinek_dataiku/dataiku/src/master/",
       "checkout": "",
-      "remotePath": ""
+      "remotePath": "",
+      "isDirty": false
     },
     "/src/master/": {
       "remote": "git@bitbucket.org:jacquelinek_dataiku/dataiku",
       "checkout": "",
-      "remotePath": ""
+      "remotePath": "",
+      "isDirty": false
     },
     "/code1": {
       "remote": "git@bitbucket.org:jacquelinek_dataiku/dataiku.git",
       "checkout": "",
-      "remotePath": ""
+      "remotePath": "",
+      "isDirty": false
     },
     "/python": {
       "remote": "git@bitbucket.org:jacquelinek_dataiku/dataiku.git",
       "checkout": "",
-      "remotePath": ""
+      "remotePath": "",
+      "isDirty": false
+    },
+    "git_1": {
+      "remote": "git@github.com:Pradnya1208/Telecom-Customer-Churn-prediction.git",
+      "checkout": "refs/heads/main",
+      "remotePath": "/Scripts",
+      "isDirty": false
     }
   },
   "pythonPath": [
     "python",
     "local",
-    "Dataiku"
+    "Dataiku",
+    "git_1"
   ],
   "rsrcPath": [
     "R"
