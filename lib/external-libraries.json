@@ -39,13 +39,20 @@
       "resolvedFiles": [],
       "faultyHash": "",
       "isDirty": false
+    },
+    "git_2": {
+      "remote": "git@github.com:archd3sai/Customer-Survival-Analysis-and-Churn-Prediction.git",
+      "checkout": "refs/heads/master",
+      "remotePath": "",
+      "isDirty": false
     }
   },
   "pythonPath": [
     "python",
     "local",
     "Dataiku",
-    "git_1"
+    "git_1",
+    "git_2"
   ],
   "rsrcPath": [
     "R"
