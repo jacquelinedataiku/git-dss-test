@@ -44,6 +44,10 @@
       "remote": "git@github.com:archd3sai/Customer-Survival-Analysis-and-Churn-Prediction.git",
       "checkout": "refs/heads/master",
       "remotePath": "",
+      "lastHash": "bc6fe108b6be7702257a1cd563a9d02201b08711",
+      "conflictingFiles": [],
+      "resolvedFiles": [],
+      "faultyHash": "",
       "isDirty": false
     }
   },
