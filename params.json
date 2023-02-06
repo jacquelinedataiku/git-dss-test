@@ -203,7 +203,7 @@
     },
     "dkuProperties": []
   },
-  "name": "Library Example",
+  "name": "Git Example",
   "imgPattern": 1,
   "metrics": {
     "probes": [],
@@ -260,11 +260,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 16,
+    "versionNumber": 17,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1675263849589
+    "lastModifiedOn": 1675702787639
   },
   "creationTag": {
     "versionNumber": 0,
