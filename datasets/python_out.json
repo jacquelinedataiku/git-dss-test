@@ -60,11 +60,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1675695860760
+    "lastModifiedOn": 1675696639696
   },
   "creationTag": {
     "versionNumber": 0,
@@ -86,8 +86,15 @@
     }
   },
   "schema": {
-    "columns": [],
-    "userModified": true
+    "columns": [
+      {"name":"id","type":"bigint"},
+      {"name":"Amount_Requested","type":"bigint"},
+      {"name":"Loan_Purpose","type":"string"},
+      {"name":"Loan_Length","type":"bigint"},
+      {"name":"Home_Ownership","type":"string"},
+      {"name":"new","type":"bigint"}
+    ],
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
