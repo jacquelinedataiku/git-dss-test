@@ -260,11 +260,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 18,
+    "versionNumber": 19,
     "lastModifiedBy": {
       "login": "admin"
     },
-    "lastModifiedOn": 1675702997999
+    "lastModifiedOn": 1678903856747
   },
   "creationTag": {
     "versionNumber": 0,
@@ -273,7 +273,7 @@
     },
     "lastModifiedOn": 1588275346689
   },
-  "shortDesc": "\nThe project *GIT_DEMO* was created by Administrator on Nov 24th 2020",
+  "shortDesc": "Connects to github repo",
   "tags": [
     "duplicated"
   ],
